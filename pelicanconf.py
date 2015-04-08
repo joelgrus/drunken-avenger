@@ -8,7 +8,7 @@ SITESUBTITLE = u'will someday be a famous author'
 SITEURL = 'http://joelgrus.com'
 #SITEURL = 'http://localhost:8000'
 
-THEME = 'themes/pelican-svbhack'
+THEME = 'themes/pelican-svbhack-joel'
 TAGLINE = SITESUBTITLE
 USER_LOGO_URL = '/images/joel.png'
 
