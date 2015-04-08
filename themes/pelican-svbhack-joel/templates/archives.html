@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}&ndash; Archives{% endblock %}
+
+{% block header %}
+  <div class="article_title">
+    <h1><a href="{{ SITEURL }}/archives.html">Blog Archives</a></h1>
+  </div>
+{% endblock %}
+
+{% block content %}
+<article>
+  <div class="article_text">
+    <dl>
+      {% for article in dates %}
+      <dt>{{ article.locale_date }}</dt>
+      <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+      {% endfor %}
+    </dl>
+  </div>
+</article>
+{% endblock %}
