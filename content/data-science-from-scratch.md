@@ -2,7 +2,7 @@ Title: Data Science From Scratch: First Principles with Python
 Date: 2015-04-26 12:00
 Category: Life, Data Science, Writing
 
-I am super-excited to announce that the book I've been working on for more than the last year, <i>Data Science from Scratch: First Principles with Python</i> is finally available! (buy from <a href="http://shop.oreilly.com/product/0636920033400.do">O'Reilly</a>) (buy from <a href="http://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/149190142X">Amazon</a>).
+I am super-excited to announce that the book I've been working on for more than the last year, <i>Data Science from Scratch: First Principles with Python</i> is finally available! (buy from <a href="http://shop.oreilly.com/product/0636920033400.do">O'Reilly</a>, use discount code AUTHD to save some money) (buy from <a href="http://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/149190142X">Amazon</a>).
 
 My experience learning and teaching data science was that there were two primary paths:
 
@@ -20,6 +20,6 @@ Hence <i>Data Science from Scratch</i>.  It's got math, but only as much as is t
 
 Many technical books (I won't name names) explain things in their text and then dump pages of hard-to-follow code at you that you are expected to puzzle through.  I spent a lot of time trying to write clean code that illuminated the concepts <i>on its own</i> and that <i>reinforced</i> the ideas from the text.  As is the current fashion these days, all of the code and data is <a href = "https://github.com/joelgrus/data-science-from-scratch">on GitHub</a>, if you'd like to get a sense of what the book is about.
 
-If you are interested in the topic, I encourage you to check it out, write a review, and let me know what you think!
+If you are interested in the topic, I encourage you to check it out, write a review, and let me know what you think!  (You can see the full table of contents on the <a href="http://shop.oreilly.com/product/0636920033400.do">O'Reilly page</a>.)
 
 <a href="http://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/149190142X">![book cover]({filename}images/dsfs.jpg)</a>
