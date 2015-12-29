@@ -1,0 +1,235 @@
+Title: Incomprehensible One-Line Point-Free Haskell
+Date: 2015-12-28 12:00
+Category: Haskell, Code
+
+[I wrote this blog post a month ago but never bothered posting it.]
+
+Although my <a href = "https://twitter.com/joelgrus">Twitter bio</a> says
+"Haskell zealot", I am not actually very "good at" Haskell.
+Instead, I'm someone who can hack around a bit and create ugly pattern-matching
+solutions to problems. The real pros are the people who can write incomprehensible
+one-line <a href="https://wiki.haskell.org/Pointfree">point-free</a> solutions to
+everything. So naturally I aspire to write that kind of code.
+
+Anyway, the other day [editor's note: 4 weeks ago] I came across the <a href = "http://adventofcode.com/">Advent of Code</a>,
+which I believe has some sort of religious significance, but (more importantly)
+also requires you to write code to solve problems. And although my day job is
+mostly C++ these days, recreational religious problems give me an opportunity
+to write Haskell.
+
+[It goes without saying that you should solve the problems yourself if you are so inclined,
+ although so far they're pretty easy.]
+
+The <a href = "http://adventofcode.com/day/1">first problem</a> asks you to
+take a string of parentheses and (in essence) calculate
+
+   (# of left parens) - (# of right parens)
+
+(The actual setup is to interpret left parens as "go up a floor" and right parens
+as "go down a floor" and calculate the floor you'd end up on if you followed
+the directions.)
+
+Once you solve it, you get a second problem, which is (in essence) to find the
+index of the first time the running total (# of left) - (# of right) equals -1.
+("The first time you go into the basement.")
+
+Like I said above, my first inclination is to write ugly, workaday
+pattern-matching solutions that are not terribly complicated:
+
+```haskell
+-- if there's no characters left, return 0.
+-- if the first character is '(' add 1 and keep going
+-- if the first character is ')' subtract 1 and keep going
+-- otherwise the first character isn't a parentheses, that's an error
+endFloor :: String -> Int
+endFloor "" = 0
+endFloor ('(':s) = 1 + endFloor s
+endFloor (')':s) = (-1) + endFloor s
+endFloor _ = error "bad input"
+
+-- if we're at floor 0 and go down, return the current index
+-- if the first character is '(', go up and increment the index
+-- if the first character is ')', go down and increment the index
+-- if there's no characters left, you don't get to the basement
+-- otherwise it's a bad input string again
+firstBasement :: String -> Int
+firstBasement s = helper 0 1 s
+  where
+    helper 0 idx (')':_) = idx
+    helper floor idx ('(':s) = helper (floor + 1) (idx + 1) s
+    helper floor idx (')':s) = helper (floor - 1) (idx + 1) s
+    helper _ _ "" = error "no basement"
+    helper _ _ _ = error "bad input"
+```
+
+These are (hopefully) not too difficult to follow, and they're definitely inelegant.  
+Let's see what we can do about that. One thing we can do is pull the +1 / -1
+logic into its own function, which allows us to eliminate some of the
+pattern-matching cases.
+
+```haskell
+upDown :: Char -> Int
+upDown '(' = 1
+upDown ')' = -1
+upDown _ = error "bad input"
+
+endFloor :: String -> Int
+endFloor "" = 0
+endFloor (c:s) = upDown c + endFloor s
+
+firstBasement :: String -> Int
+firstBasement s = helper 0 1 s
+  where
+    helper 0 idx (')':_) = idx
+    helper floor idx (c:s) = helper (floor + upDown c) (idx + 1) s
+    helper _ _ "" = error "no basement"
+```
+
+That's better, but we can get rid of the input string pattern matching entirely:
+
+```haskell
+import Data.List (findIndex)
+
+endFloor :: String -> Int
+endFloor s = sum (map upDown s)
+
+firstBasement :: String -> Int
+firstBasement s =
+  case findIndex (<0) allFloors of
+    (Just idx) -> idx
+    Nothing -> error "no basement"
+  where allFloors = scanl (+) 0 (map upDown s)
+```
+
+The new `endFloor` is still pretty simple. We convert the string `s` into a
+list of 1's and -1's and just add them up.
+
+The first interesting part here is
+<a href="http://hackage.haskell.org/package/base-4.8.1.0/docs/Prelude.html#v:scanl">scanl</a>,
+which with `(+)` produces the running totals:
+
+  [0, 0 + first element, 0 + first two elements, ... ]
+
+That is,
+
+  [0, floor after 1 step, floor after 2 steps, .... ]
+
+so that `allFloors` gives the sequence of floors visited (with an extra 0 at
+the beginning).
+
+The other interesting part is
+<a href="http://hackage.haskell.org/package/base-4.8.1.0/docs/Data-List.html#v:findIndex">findIndex</a>,
+which returns `Maybe` the index of
+the first element satisfying its predicate. We then use `case` to pull out the
+value or throw an error. Because of the extra 0 at the beginning of `allFloors`,
+the result of `findIndex` will be the 1-based index of the first visit
+to the basement, as desired.
+
+Of course, to be really good Haskellers, we shouldn't throw errors, we should
+deal with them in our type system. So let's use `Maybe` to represent no results.
+We can start by rewriting `upDown`.
+
+```haskell
+upDown :: Char -> Maybe Int
+upDown '(' = Just 1
+upDown ')' = Just (-1)
+upDown _ = Nothing
+```
+
+First let's deal with `endFloor`, since it's easier. We can still `map upDown`
+over our input, but now we'll get a `[Maybe Int]` instead of an `[Int]`. We can
+then use <a href ="http://hackage.haskell.org/package/base-4.8.1.0/docs/Prelude.html#v:sequence">`sequence`</a> to turn the `[Maybe Int]` into a `Maybe [Int]`
+and finally `fmap sum` to get (maybe) the result.
+
+```haskell
+endFloor :: String -> Maybe Int
+endFloor s = fmap sum (sequence (map upDown s))
+```
+
+at which point it's easy to make it point-free:
+
+```haskell
+endFloor :: String -> Maybe Int
+endFloor =
+  fmap sum .  -- Just -1 <-
+  sequence .  -- Just [1, 1, -1, -1, -1] <-
+  map upDown  -- [Just 1, Just 1, Just -1, Just -1, Just -1] <- "(()))"
+```
+
+But `sequence . map` is precisely <a href ="https://www.haskell.org/hoogle/?hoogle=mapM">`mapM`</a>, which means we can just write
+
+```haskell
+endFloor :: String -> Maybe Int
+endFloor = fmap sum . mapM upDown
+```
+
+Now we just need to deal with the basement. Here's a first attempt:
+
+```haskell
+firstBasement :: String -> Maybe Int
+firstBasement s =
+  join $                         -- Just 5 <-
+  fmap (findIndex (<0)) $        -- Just (Just 5) <-
+  fmap (scanl (+) 0) $           -- Just [0, 1, 2, 1, 0 -1] <-
+  sequence $                     -- Just [1, 1, -1, -1, -1] <-
+  map upDown s                   -- [Just 1, Just 1, Just -1, Just -1, Just -1] <- "(()))"
+```
+
+Again, we can replace `sequence . map` with `mapM`:
+
+```haskell
+firstBasement :: String -> Maybe Int
+firstBasement s =
+  join $                         -- Just 5 <-
+  fmap (findIndex (<0)) $        -- Just (Just 5) <-
+  fmap (scanl (+) 0) $           -- Just [0, 1, 2, 1, 0 -1] <-
+  mapM upDown s                  -- Just [1, 1, -1, -1, -1] <- "(()))"
+```
+
+And we can apply the <a href ="https://en.wikibooks.org/wiki/Haskell/The_Functor_class#The_functor_laws">functor laws</a>
+to combine the `fmap`s:
+
+```haskell
+firstBasement :: String -> Maybe Int
+firstBasement s =
+  join $                                   -- Just 5 <-
+  fmap (findIndex (<0) . scanl (+) 0) $    -- Just (Just 5) <-
+  mapM upDown s                            -- Just [1, 1, -1, -1, -1] <- "(()))"
+```
+
+And then `join . fmap` is just bind (which requires us to reverse the order of the functions):
+
+```haskell
+firstBasement :: String -> Maybe Int
+firstBasement s =
+  mapM upDown s >>= (findIndex (<0) . scanl (+) 0)
+```
+
+To get to point-free we can use <a href = "https://en.wikibooks.org/wiki/Haskell/Understanding_monads#Monadic_composition">monadic composition</a>:
+
+```haskell
+firstBasement :: String -> Maybe Int
+firstBasement = mapM upDown >=> (findIndex (<0) . scanl (+) 0)
+```
+
+To sum up, here's our solution:
+
+```haskell
+import Control.Monad ((>=>))
+import Data.List (findIndex)
+
+upDown :: Char -> Maybe Int
+upDown '(' = Just 1
+upDown ')' = Just (-1)
+upDown _ = Nothing
+
+endFloor :: String -> Maybe Int
+endFloor = fmap sum . mapM upDown
+
+firstBasement :: String -> Maybe Int
+firstBasement = mapM upDown >=> (findIndex (<0) . scanl (+) 0)
+```
+
+So clean and impenetrable.
+
+(I bet there's a way to make it even jerkier.)

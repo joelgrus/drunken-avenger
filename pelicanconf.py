@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Joel Grus'
 SITENAME = u'Joel Grus'
-SITESUBTITLE = u'will someday be a famous author'
+SITESUBTITLE = u'is sort of a famous author'
 SITEURL = 'http://joelgrus.com'
 #SITEURL = 'http://localhost:8000'
 
@@ -56,7 +56,7 @@ SOCIAL = (('Twitter', 'https://twitter.com/joelgrus'),
           ('LinkedIn', 'http://www.linkedin.com/in/joelgrus/'))
 
 TWITTER_USERNAME = 'joelgrus'
-          
+
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
