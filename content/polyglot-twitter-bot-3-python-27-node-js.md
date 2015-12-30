@@ -83,7 +83,7 @@ client = Twython(credentials["consumer_key"],
 Of course, we also need to create our query and regular expression:
 
 ```python
-query = 'make "great again" -america -filter:retweets'```
+query = 'make "great again" -america -filter:retweets'
 rgx = r"make (.*) great again"
 ```
 
