@@ -2,7 +2,7 @@ Title: Incomprehensible One-Line Point-Free Haskell
 Date: 2015-12-28 12:00
 Category: Haskell, Code
 
-[I wrote this blog post a month ago but never bothered posting it.]
+[I wrote this blog post a long time ago but never managed to post it.]
 
 Although my <a href = "https://twitter.com/joelgrus">Twitter bio</a> says
 "Haskell zealot", I am not actually very "good at" Haskell.
@@ -11,7 +11,7 @@ solutions to problems. The real pros are the people who can write incomprehensib
 one-line <a href="https://wiki.haskell.org/Pointfree">point-free</a> solutions to
 everything. So naturally I aspire to write that kind of code.
 
-Anyway, the other day [editor's note: 4 weeks ago] I came across the <a href = "http://adventofcode.com/">Advent of Code</a>,
+Anyway, the other day [editor's note: last December] I came across the <a href = "http://adventofcode.com/">Advent of Code</a>,
 which I believe has some sort of religious significance, but (more importantly)
 also requires you to write code to solve problems. And although my day job is
 mostly C++ these days, recreational religious problems give me an opportunity
@@ -62,7 +62,7 @@ firstBasement s = helper 0 1 s
     helper _ _ _ = error "bad input"
 ```
 
-These are (hopefully) not too difficult to follow, and they're definitely inelegant.  
+These are (hopefully) not too difficult to follow, and they're definitely inelegant.
 Let's see what we can do about that. One thing we can do is pull the +1 / -1
 logic into its own function, which allows us to eliminate some of the
 pattern-matching cases.
