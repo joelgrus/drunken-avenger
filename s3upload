@@ -1,1 +1,1 @@
-s3cmd sync output/ s3://joelgrus.com --acl-public --delete-removed --guess-mime-type
+s3cmd sync output/ s3://joelgrus.com --acl-public --delete-removed --guess-mime-type --no-mime-magic

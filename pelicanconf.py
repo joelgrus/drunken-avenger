@@ -6,13 +6,13 @@ AUTHOR = u'Joel Grus'
 SITENAME = u'Joel Grus'
 SITESUBTITLE = u'is sort of a famous author'
 SITEURL = 'http://joelgrus.com'
-#SITEURL = 'http://localhost:8000'
+#SITEURL = 'http://localhost:8888'
 
 THEME = 'themes/pelican-svbhack-joel'
 TAGLINE = SITESUBTITLE
 USER_LOGO_URL = '/images/joel.png'
 
-STATIC_PATHS = ['images', 'wp-content']
+STATIC_PATHS = ['images', 'wp-content', 'experiments']
 
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'

@@ -63,7 +63,7 @@ main header p {
   text-transform: uppercase;
 }
 main article {
-  max-width: 640px;
+  max-width: 720px;
   padding: 20px 40px 20px 40px;
 }
 
@@ -175,7 +175,7 @@ main div#ending_message {
     overflow-y: hidden;
   }
   main article {
-    max-width: 640px;
+    max-width: 720px;
   }
   main header {
     border-top: 0;
