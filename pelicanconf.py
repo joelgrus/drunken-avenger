@@ -1,12 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHOR = u'Joel Grus'
 SITENAME = u'Joel Grus'
 SITESUBTITLE = u'is sort of a famous author'
-SITEURL = 'http://joelgrus.com'
-#SITEURL = 'http://localhost:8888'
+if os.environ.get('LOCALHOST'):
+    SITEURL = 'http://localhost:8888'
+else:
+    SITEURL = 'http://joelgrus.com'
 
 THEME = 'themes/pelican-svbhack-joel'
 TAGLINE = SITESUBTITLE
