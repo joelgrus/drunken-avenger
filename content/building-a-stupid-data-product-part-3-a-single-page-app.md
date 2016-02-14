@@ -178,18 +178,20 @@ answerClicked questionId answerId state =
   { score : newScore, questions: newQuestions, waitingForQuestion: true }
   where
     q = case state.questions `unsafeIndex` questionId of Question q' -> q'
-    newScore = state.score + (if q.correctAnswer == answerId then 1 else 0)
+    newScore =
+      if q.correctAnswer == answerId then state.score + 1 else state.score
     answeredQuestion = Question $ q { chosenAnswer = Just answerId }
     newQuestions =
       fromJust $ updateAt questionId answeredQuestion state.questions
 ```
 
 This one is a little more complicated. First we use `unsafeIndex`
-to pull the clicked `Question` out of `state.questions`, and use pattern-matching
-to pull the question record out of the `newtype`. We compute a new score by
+to pull the clicked `Question` out of `state.questions`, along with
+pattern-matching
+to pull the question record out of the `newtype`. We compute the new score by
 adding 1 to the current if the clicked `answerId` was the `correctAnswer`.
 Then we update the question at `questionId` by setting its
-`chosenAnswer` property correctly.
+`chosenAnswer` property.
 
 So, at this point we have `Action`s
 and we have functions that update the state in response
@@ -243,13 +245,14 @@ around making an AJAX call, and to be honest I don't really understand it well
 
 Here `launchAff` takes a value in an "asynchronous computation effect context",
 runs it synchronously, and ignores the value. (This is fine, since we don't
-need the result of the computation, we just want the callback effect.)
+need the result of the computation, we just want it to emit a signal
+when it finishes (or log an error if it fails)).
 
 The asynchronous computation makes an GET request to the questionServiceUrl,
 uses `readJSON` to convert the response into a `Question` object
 (in the `F` context, which is a type synonym for `Either ForeignError`)
 and then either logs the error (if the conversion fails)
-or sends a `QuestionReceived` action (if the conversion succeeds).
+or sends off a `QuestionReceived` action (if the conversion succeeds).
 
 (Because both the `log` and `S.send` effects operate in the
  synchronous effect context `Eff`, we have to "lift" them into the
@@ -263,7 +266,9 @@ Now it's time to produce the view. At a high level our goal is
 view :: State -> VirtualDOM
 ```
 
-`VirtualDOM` is a hyperscript DSL that allows you to write stuff like
+after which React will take care of rendering the `VirtualDOM`.
+
+`VirtualDOM` has a hyperscript DSL that allows you to write stuff like
 
 ```haskell
 -- This is an illustrative example, not part of our code:
@@ -276,7 +281,8 @@ view state = div $ do
 ```
 
 The place where I got stuck was on how to create arbitrarily many elements
-by `map`-ing over an array. Eventually I noticed that `VirtualDOM` has a
+by `map`-ing over an array. (None of the examples do that.)
+Eventually I noticed that `VirtualDOM` has a
 `Monoid` instance, which means we can use
 
 ```haskell
@@ -418,7 +424,7 @@ The classes are determined by three boolean values:
 * `isChosen`   -- did the quizzee click *this* answer?
 * `isCorrect`  -- is this the correct answer?
 
-The logic is possibly too clever
+The code for generating the classes is possibly too clever
 (although all my alternative versions with lots of `if` and `then`
 were really ugly), but basically it sets up an array of pairs
 (boolean value, class name), throws out the pairs where the first element is false,

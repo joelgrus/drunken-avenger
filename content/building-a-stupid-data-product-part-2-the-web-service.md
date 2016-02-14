@@ -410,6 +410,15 @@ there. The Internet/StackOverflow was not a lot of help.
 
 At the end of the day, I just rewrote it in <a href = "https://github.com/joelgrus/science-questions/tree/master/python-flask">flask</a>. :sad_face:
 
+That said, it's up and running at `http://54.174.99.38/question`:
+
+```bash
+$ curl http://54.174.99.38/question
+{"questionText": "Which system?", "answers": ["Absorbing water plants than the air pollution", "It will be healthy", "flood the air pollution", "tying a great gardener."], "correctAnswer": 0}
+```
+
+But it's a cheap EC2 nano instance, so please be gentle.
+
 ## Next Time
 
 In the third (and final) post, we'll <a href = "">build a quiz webapp</a>
