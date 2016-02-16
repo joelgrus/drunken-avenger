@@ -107,10 +107,10 @@ main article div.article_text h3 {
 
 
 main article div.article_text blockquote {
-  margin: 22px 2px 22px 2px;
-  padding-left: 40px;
-  color: #999999;
-  font-style: italic;
+  margin: 22px 2px 22px 22px;
+  padding-left: 20px;
+  color: #666666;
+  border-left: solid #666666 3px;
 }
 main article div.gist {
   line-height: .875em;

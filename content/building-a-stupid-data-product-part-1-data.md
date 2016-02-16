@@ -2,9 +2,11 @@ Title: Building a Stupid Data Product, Part 1: The Data (Python)
 Date: 2016-02-15 07:00
 Category: Python, Hacking, Data, Data Science
 
-(<a href = "">part 2</a>, <a href = "">part 3</a>)
+(<a href = "/2016/02/15/building-a-stupid-data-product-part-2-the-web-service-haskell/">part 2</a>,
+ <a href = "/2016/02/15/building-a-stupid-data-product-part-3-the-single-page-app-purescript/">part 3</a>)
 
-As I'm not working right now, I have a surfeit of time to hack on stupid things.
+As I'm not working right now<a href = "#footnote">* </a>,
+I have a surfeit of time to hack on stupid things.
 In particular, it seemed like a good idea to hack together a stupid data product.
 
 Inspiration (if you can call it such) struck when the Allen Institute released
@@ -224,5 +226,8 @@ Out[60]: 'Mount St .'
 
 ## Next Time
 
-In the <a href = "">next post</a>
+In the <a href = "/2016/02/15/building-a-stupid-data-product-part-2-the-web-service-haskell/">next post</a>
 we'll build a web service that generates questions on demand.
+
+<a name="footnote" />* </a> I'm sort of looking for my next thing,
+if you know of something I'd find interesting, let me know.

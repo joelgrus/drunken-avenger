@@ -15,7 +15,7 @@ THEME = 'themes/pelican-svbhack-joel'
 TAGLINE = SITESUBTITLE
 USER_LOGO_URL = '/images/joel.png'
 
-STATIC_PATHS = ['images', 'wp-content', 'experiments']
+STATIC_PATHS = ['images', 'wp-content', 'experiments', 'static']
 
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'

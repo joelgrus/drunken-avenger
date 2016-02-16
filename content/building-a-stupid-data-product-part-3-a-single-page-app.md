@@ -1,10 +1,12 @@
-Title: Building a Stupid Data Product, Part 3: A Single-Page App (PureScript)
+Title: Building a Stupid Data Product, Part 3: The Single-Page App (PureScript)
 Date: 2016-02-15 09:00
 Category: PureScript, Hacking, Data, Data Science
 
-(<a href = "">part 1</a>, <a href = "">part 2</a>)
+(<a href = "/2016/02/15/building-a-stupid-data-product-part-1-the-data-python/">part 1</a>,
+ <a href = "/2016/02/15/building-a-stupid-data-product-part-2-the-web-service-haskell/">part 2</a>)
 
-OK, so <a href = "">last time</a> we built a web service that responds to GET
+OK, so
+<a href = "/2016/02/15/building-a-stupid-data-product-part-2-the-web-service-haskell/">last time</a> we built a web service that responds to GET
 requests with random (bogus) elementary school science questions. In this third
 (and last) installment, we'll create a single-page quiz app that consumes the
 service.
@@ -359,7 +361,7 @@ This tells us that we must have
 renderQuestion :: Question -> Int -> VirtualDOM
 ```
 
-(Or, since `QuestionId` is a type alias for `Int`, we can use the more descriptive)
+Or, since `QuestionId` is a type alias for `Int`, we can use the more descriptive
 
 ```haskell
 renderQuestion :: Question -> QuestionId -> VirtualDOM
@@ -415,7 +417,7 @@ The hyperscript part is quite simple:
 ```
 
 It's a `div`, with some classes attached to it,
-possibly with a click handler attached to it,
+with something else that might be a click handler attached to it,
 and containing the text of the answer. Simple.
 
 The classes are determined by three boolean values:
@@ -450,8 +452,11 @@ main = renderToDOM "#app" =<< app
 
 You can see it up and running
 <a href = "http://joelgrus.com/experiments/science-questions/">here</a>.
-The front-end is totally robust, but the back-end question service is running
-on an EC2 nano instance, so try to be gentle.
+(Fear my mad CSS / design skills.)
+
+The front-end should be totally robust, but the back-end question service is running
+on an EC2 nano instance, so try to be gentle. If it dies for some reason, this
+is what it looks like (or run it yourself locally!):
 
 ![science quiz]({filename}/images/science_quiz.png)
 
@@ -460,7 +465,20 @@ on an EC2 nano instance, so try to be gentle.
 I really enjoyed working with purescript-pux,
 it's probably my favorite of the PureScript frameworks I've tried.
 It's pretty much brand new (I think it was announced a couple of weeks ago),
-so there's not a ton of help, but I managed to figure everything out mostly.
+so there's not a ton of help, but the docs are pretty good and
+I managed to figure everything out mostly. Why do I like it?
+
+1. It has pretty much the same model as <a href = "http://cycle.js.org/">cycle.js</a>,
+   which I've been playing with a lot recently, and "feels like"
+   the right way to write apps.
+
+2. From my (newbie) perspective, it involves a good bit less mystery than (e.g.)
+ <a href = "https://github.com/paf31/purescript-thermite">purescript-thermite</a>
+ or <a href = "https://github.com/slamdata/purescript-halogen">purescript-halogen</a>,
+ neither of which I really felt like I was understanding as I used them.
+
+So check it out, and thanks to <a href = "http://twitter.com/alexmingoia">@alexmingoia</a>
+for creating it.
 
 Anyway, that's the end of our end-to-end stupid data product.
 Possibly you learned something, and possibly you'll go off and

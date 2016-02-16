@@ -2,11 +2,13 @@ Title: Building a Stupid Data Product, Part 2: The Web Service (Haskell)
 Date: 2016-02-15 08:00
 Category: Haskell, Hacking, Data, Data Science
 
-(<a href = "">part 1</a>, <a href = "">part 3</a>)
+(<a href = "/2016/02/15/building-a-stupid-data-product-part-1-the-data-python/">part 1</a>,
+ <a href = "/2016/02/15/building-a-stupid-data-product-part-3-the-single-page-app-purescript/">part 3</a>)
 
-Last time we <a href = "">collected and processed the data</a> for generating
-stupid fake elementary school science questions and answers. The important parts
-to remember are
+Last time we
+<a href = "/2016/02/15/building-a-stupid-data-product-part-1-the-data-python/">collected and processed the data</a>
+for generating stupid fake elementary school science questions and answers. The
+important parts to remember are
 
 1. we generated two files `questions.json` and `answers.json`
    containing _transition dictionaries_ mapping each word to an array / list of
@@ -54,23 +56,39 @@ that makes it so our service knows how to serialize a `Question` to
 JSON (since we can't send Haskell objects over the wire). I don't understand it,
 I just copied it from the docs.
 
-Next we define a few types for dealing with tokens and our sentinel values:
+Now we need to define a type for our tokens. One of the benefits of working in
+a nicely-typed language is that we don't have to use "sentinel values", we can
+use our type system for that:
 
 ```haskell
-type Token = String
-
-type GetNextToken = Token -> IO Token
-
-start :: Token
-start = "__START__"
-
-stop :: Token
-stop = "__STOP__"
+data Token = Start | Stop | Word String deriving (Eq, Ord)
 ```
 
-A token is just a string, that's pretty simple. And the type `GetNextToken`
-represents a function that takes a `Token` and returns an `IO Token`. If you
-are not a Haskell person, you are at this point wondering
+So a token is either `Start`, `Stop`, or a `Word` with an associated `String`
+value. The `deriving (Eq, Ord)` just makes it so that we can test two tokens
+for equality and inequalities.
+
+Since our tokens will come from deserializing JSON, we'll also need a `Read`
+instance, which indicates how to parse text into `Token` objects:
+
+```haskell
+instance Read Token where
+  readsPrec _ "__START__" = [(Start,  "")]
+  readsPrec _ "__STOP__"  = [(Stop,   "")]
+  readsPrec _ w           = [(Word w, "")]
+```
+
+Don't get hung up on the details, it does exactly what you'd expect it to do.
+(If you do get hung up on the details, read <a href = "http://hackage.haskell.org/package/base-4.8.2.0/docs/Prelude.html#t:Read">the docs</a>.)
+
+We also want to define a type alias
+
+```haskell
+type GetNextToken = Token -> IO Token
+```
+
+that represents a function that takes a `Token` and returns an `IO Token`.
+If you are not a Haskell person, you are at this point wondering
 
 1. Why does it not just return a `Token`?
 2. What the hell is an `IO Token`?
@@ -108,16 +126,16 @@ a starting `Token` and a `GetNextToken` function, we want to generate a list of
 tokensFrom :: Token -> GetNextToken -> IO [Token]
 tokensFrom startToken getNext = do
   nextToken <- getNext startToken   -- nextToken :: Token
-  if nextToken == stop
-    then return []                  -- empty list in an IO context
-    else liftA2 (:) (pure nextToken) (tokensFrom nextToken getNext)
+  case nextToken of
+    Stop  -> return []
+    token -> liftA2 (:) (pure token) (tokensFrom token getNext)
 ```
 
 This shouldn't be hard _conceptually_, it's just recursion:
 
 * `tokensFrom` takes a start `Token` and a `GetNextToken` function
 * it calls the `GetNextToken` function on the starting `Token`
-* if `nextToken` is our `stop` sentinel, the result is an empty list;
+* if `nextToken` is `Stop`, the result is an empty list;
 * otherwise, the result is the list whose first element is `nextToken`,
   and whose subsequent elements are the results of `tokensFrom nextToken`.
 
@@ -129,7 +147,7 @@ value out of the result of a `GetNextToken` call. That is, while `getNext` retur
 an `IO Token`, as long as we're inside the `do` block for an `IO` context, we can
 use `<-` to "get the `Token` out."
 
-If we find `stop`, the result is `return []`. Notably, this is not the `return`
+If we find `Stop`, the result is `return []`. Notably, this is not the `return`
 you might know from other languages. Here this is
 
 ```haskell
@@ -177,29 +195,32 @@ the same thing. In the previous instance I was using `IO` as a Monad, so I used
 good explanation, and it's probably not even a good reason. I don't care.
 (I was also trying not to say "monad" in this post, but I guess I failed.)]
 
-Next we want to turn a list of `Token`s into a `String`. Naively we could use
-Haskell's `unwords`, which just uses spaces everywhere. But we don't want to put
-spaces before punctuation marks, so we'll write our own:
+Next we want to turn a list of `Token`s into a `String`:
 
 ```haskell
 smartJoin :: [Token] -> String
 smartJoin = dropWhile (== ' ') . concat . addSeparators
   where
     addSeparators = concatMap addSeparator
-    addSeparator word
-      | word `elem` ["?", ",", "."] = ["",  word]
-      | otherwise                   = [" ", word]
+    addSeparator token = case token of
+      Word w | w `elem` ["?", ",", "."] -> ["",  w]
+      Word w                            -> [" ", w]
+      _                                 -> []
 ```
 
-The first thing we do is `addSeparators`, which turns each word into a list
+The first thing we do is `addSeparators`, which turns each `Word` into a list
 `[separator, word]` and then concatenates the resulting lists.
-If the word is punctuation, the separator is an empty string.
+If the `Word` is punctuation, the separator is an empty string.
 Otherwise it's a space.
+
+(We should never call `smartJoin` on a list that includes the `Start` or `Stop`
+ tokens, but just in case we add in an empty list, which is the same as ignoring
+ the token.)
 
 So, for instance, if you were to call
 
 ```haskell
-addSeparators ["What", "is", "love", "?"]
+addSeparators [Word "What", Word "is", Word "love", Word "?"]
 ```
 
 you would get
@@ -220,13 +241,13 @@ Now we're ready to implement our sentence generator:
 
 ```haskell
 generate :: GetNextToken -> IO String
-generate = fmap smartJoin . tokensFrom start
+generate = fmap smartJoin . tokensFrom Start
 ```
 
 To be a jerk, I wrote it in point-free style, it's the same as if I'd done
 
 ```haskell
-generate nextToken = fmap smartJoin (tokensFrom start nextToken)
+generate nextToken = fmap smartJoin (tokensFrom Start nextToken)
 ```
 
 Here `tokensFrom` generates `IO [Token]` (an list of tokens in an effectful context)
@@ -272,30 +293,43 @@ but now we want a typed way to work with them in Haskell:
 
 ```haskell
 type Transitions = M.Map Token [Token]
-
-loadTransitions :: String -> IO Transitions
-loadTransitions = fmap (fromJust . decode) . BS.readFile
 ```
 
-Here `Transitions` will be a `Map` (like a dictionary)
+Here `Transitions` is a `Map` (like a dictionary)
 whose keys are `Token`s and whose values are lists of `Token`s.
 
-And `loadTransitions` is another point-free function. It involves the pieces
-(with types specialized to this instance)
+However, our _serialized_ map of transitions is a dictionary whose keys are
+_strings_ and whose values are _lists of strings_. That means we need to
+deserialize it and then convert the strings to `Token`s:
 
 ```haskell
-BS.readFile :: FilePath -> IO BS.ByteString
-decode :: BS.ByteString -> Maybe Transitions
-fromJust :: Maybe Transitions -> Transitions
-fmap :: (a -> b) -> IO a -> IO b
+loadTransitions :: String -> IO Transitions
+loadTransitions = fmap (textToTokens . fromJust . decode) . BS.readFile
+  where textToTokens = M.map (map read) . M.mapKeys read
 ```
 
-That is, we read a file (which gets us some bytes in an `IO` context)
-and then we lift `fromJust . decode` (which deserializes those bytes
-into a `Transitions` object, crashing if it can't) into the `IO` context.
-This isn't a "safe" way to do things (usually we'd want to check that
-`decode` doesn't return `Nothing` and deal with that somehow),
-but because we generated the JSON ourselves, we know it's safe:
+
+Our `loadTransitions` is another point-free function. It reads a file
+(which gets us some bytes in an `IO` context), and then uses `fmap` to lift the three
+composed functions into the `IO` context.
+
+First, `decode` `Maybe`-deserializes the bytes into a map (with text keys and values).
+After that, `fromJust` assumes the deserialization succeeded and pulls the map out of the `Maybe`.
+Finally, `textToTokens` converts the text-texts map into a `Token`-`Token`s map.
+
+(The `fromJust` isn't a "safe" way to do things (usually we'd want to check that
+ `decode` doesn't return `Nothing` and deal with that somehow),
+but because we generated the JSON ourselves, we know it's valid.)
+
+How does `textToTokens` work? First, it calls `M.mapKeys read`, which returns the
+new `Map` that results from applying `read` to each of the input `Map`'s keys.
+So it returns a map whose keys are `Token`s but whose values are still lists of text.
+And then we feed it into `M.Map (map read)`, which returns the `Map` that results
+from calling `map read` on each of the input `Map`'s values. Those values are
+lists of text, so `map read` converts each one to a list of `Token`s.
+At the end of the process we have a `M.Map Token [Token]` as required.
+
+Now we're ready to actually load the data:
 
 ```haskell
 questionTransitions :: IO Transitions
@@ -305,7 +339,7 @@ answerTransitions :: IO Transitions
 answerTransitions = loadTransitions "answers.json"
 ```
 
-Remember that the abstraction we used was
+Next, remember that the abstraction we used was
 
 ```haskell
 type GetNextToken = Token -> IO Token
@@ -333,7 +367,7 @@ randomNextToken :: Transitions -> GetNextToken
 randomNextToken transitions token =
   case M.lookup token transitions of
     Just tokens -> pick tokens
-    _           -> return stop  -- this shouldn't happen, but let's be safe
+    _           -> return Stop  -- this shouldn't happen, but let's be safe
 ```
 
 If you are confused about why we define it as `randomNextToken transitions token`,
@@ -349,51 +383,92 @@ following tokens at random.
 
 ## The API
 
-*Finally*, we're ready to create the API. After all we've done, this part is
-pretty anti-climactic. To start with, we define our API:
+*Finally*, we're ready to create the actual web service.
+To start with, we define our API:
 
 ```haskell
 type API = "question" :> Get '[JSON] Question
 ```
 
 It has a single endpoint "question", which responds to HTTP GET requests
-and returns a `Question` serialized into JSON. Our server just implements
-this API:
+and returns a `Question` serialized into JSON.
+
+My first attempt at implementing this turned out to be *really* slow.
+After poking around at a lot of stuff, I finally figured out it was because
+every reference to the effectful `questionTransitions` and `answerTransitions`
+was deserializing them from disk again. Needless to say, that was not the desired
+behavior.
+
+After some digging I found <a href = "http://hackage.haskell.org/package/io-memoize-1.1.1.0/docs/System-IO-Memoize.html">System.IO.Memoize</a>, which memoizes expensive `IO` actions (like deserializing a giant transitions object).
+Initially this didn't help because I was memoizing *too late*. So I moved it
+right to app startup:
 
 ```haskell
-getRandomQuestionUsingTransitions :: IO Question
-getRandomQuestionUsingTransitions = do
-  qt <- questionTransitions
-  at <- answerTransitions
-  randomQuestion 4 (randomNextToken qt) (randomNextToken at)
-
-server :: Server API
-server = liftIO getRandomQuestionUsingTransitions
+startApp :: IO ()
+startApp = do
+  cachedQt <- eagerlyOnce questionTransitions
+  cachedAt <- eagerlyOnce answerTransitions
+  run 8080 $ simpleCors $ app cachedQt cachedAt
 ```
 
-All the `server` does is get a random `Question` (in an `IO` context)
-and "lift" it into the `Server` context.
+(Incidentally, most of this stuff is standard servant boilerplate,
+ just tweaked in order to use my cached `Transitions`.)
+
+The type of `eagerlyOnce` is
+
+```haskell
+eagerlyOnce :: IO a -> IO (IO a)
+```
+
+Since `questionTransitions` is `IO Transitions`, this means that
+`eagerlyOnce questionTransitions` is `IO (IO Transitions)`. Since we're in an `IO`
+context, the `<-` means that `cachedQt` and `cachedAt` are both `IO Transitions`
+(and that they should memoize their values).
+
+(The `simpleCors` is just middleware that allows our service to handle
+ cross-origin requests.)
+
+Now we can define our `Application`.
+
+<blockquote>
+Which again needs the cached transitions
+as inputs, I am not very happy about the ugly way we're passing them around
+everywhere, but when I tried to avoid that by e.g. moving all the helpers into
+the `startApp` function, I got all sorts of cryptic "Couldn't match type"
+errors, so eventually I gave up and accepted my fate.
+</blockquote>
+
+It's pretty simple (again, this is all basically servant boilerplate):
+
+```haskell
+app :: IO Transitions -> IO Transitions -> Application
+app cachedQt cachedAt = serve api (server cachedQt cachedAt)
+```
+
+And finally we define the `server`:
+
+```haskell
+server :: IO Transitions -> IO Transitions -> Server API
+server cachedQt cachedAt = liftIO $ do
+  qt <- cachedQt
+  at <- cachedAt
+  randomQuestion 4 (randomNextToken qt) (randomNextToken at)
+```
+
+In an `IO` context it retrieves the cached transitions for the questions and
+answers, and then it uses them to generate a random `Question`. It then uses
+`liftIO` to lift the `Question` out of the `IO` context and into the `Server`
+context.
 
 There is a tiny amount of more boilerplate:
 
 ```haskell
-startApp :: IO ()
-startApp = run 8080 $ simpleCors $ app
-
-app :: Application
-app = serve api server
-
 api :: Proxy API
 api = Proxy
 ```
 
-which basically just says to serve this on port 8080,
-and to use some
-<a href = "https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS">CORS</a>
-middleware to allow cross-origin requests.
-
-AND THAT'S IT. If you build and run it, you'll end up with a service running on
-localhost:8080:
+AND THAT'S IT. If you build and run it, you'll end up with a (very fast)
+service running on localhost:8080:
 
 ```bash
 $ curl http://localhost:8080/question
@@ -402,15 +477,20 @@ $ curl http://localhost:8080/question
 
 ## The Punchline
 
-I spent a couple of hours trying to deploy this to an EC2 machine,
+After all that work, I spent a couple of hours trying to deploy this to an EC2 machine,
 failing miserably. The generated executable depends on a bunch of libraries on
 my system. When I tried to statically include those, the compilation failed.
 And the EC2 machine was way too underpowered to install `stack` and build it
 there. The Internet/StackOverflow was not a lot of help.
 
-At the end of the day, I just rewrote it in <a href = "https://github.com/joelgrus/science-questions/tree/master/python-flask">flask</a>. :sad_face:
+At the end of the day, I just rewrote it in <a href = "https://github.com/joelgrus/science-questions/tree/master/python-flask">flask</a>
+and deployed that version. :sad_face
 
-That said, it's up and running at `http://54.174.99.38/question`:
+(However, it was only because I had a (much faster) flask version that I realized
+ the servant version was way too slow and went down the `System.IO.Memoize` path,
+ so in that sense it's a good thing!)
+
+The flask version is up and running at `http://54.174.99.38/question`:
 
 ```bash
 $ curl http://54.174.99.38/question
@@ -421,5 +501,6 @@ But it's a cheap EC2 nano instance, so please be gentle.
 
 ## Next Time
 
-In the third (and final) post, we'll <a href = "">build a quiz webapp</a>
+In the third (and final) post, we'll
+<a href = "/2016/02/15/building-a-stupid-data-product-part-3-the-single-page-app-purescript/">build a quiz webapp</a>
 that uses this service.
