@@ -8,7 +8,8 @@
   -->
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|Roboto+Mono|Bangers">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,23 +44,25 @@
         <img src="{{ SITEURL }}/theme/images/logo.png" alt="logo">
         {% endif %}
       </a>
-      <h2><a href="{{ SITEURL }}">{{ AUTHOR }}</a></h2>
+      <h2><a class="name" href="{{ SITEURL }}">{{ AUTHOR }}</a></h2>
       <p>{{ TAGLINE }}</p>
-      <ul>
+      <ul class="side-links">
         {% if DISPLAY_PAGES_ON_MENU %}
           {% for p in pages %}
-          <li><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-        {% endfor %}{% endif %}      
-        <li><a href="{{ SITEURL }}/archives.html">Blog Archives</a></li>        
+          <li class="side-link"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+        {% endfor %}{% endif %}
+        <li class="side-link"><a href="{{ SITEURL }}/archives.html">Blog Archives</a></li>
         {% for title, link in MENUITEMS %}
-        <li><a href="{{ link }}">{{ title }}</a></li>
+        <li class="side-link"><a href="{{ link }}">{{ title }}</a></li>
         {% endfor %}
         {% for name, link in LINKS %}
-        <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
+        <li class="side-link"><a href="{{ link }}" target="_blank">{{ name }}</a></li>
         {% endfor %}
-        <!--{% for name, link in SOCIAL %}
-        <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
-        {% endfor %}-->
+        <li class="social">
+          {% for class, link in SOCIAL %}
+          <a href="{{ link }}" target="_blank"><i class="{{class}}"></i></a>
+          {% endfor %}
+        </li>
       </ul>
     </div>
   </aside>

@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>Pux-It</title>
+<style>
+button {
+  float:left;
+  clear: both;
+  margin: 10px;
+}
+
+div.card {
+  width: 100px;
+  border: 1px solid lightgray;
+  float: left;
+  padding: 2px;
+  margin: 4px;
+  cursor: pointer;
+  color: #BBBBBB;
+}
+
+div.card > img {
+  width: 40px;
+  height: 40px;
+  fill: #BBBBBB;
+  padding: 1px;
+  margin: 1px;
+  float: left;
+}
+
+div.card.selected {
+  border: 5px dashed purple;
+  margin: 0px;
+}
+
+.correct {
+	-webkit-animation: correct 1s linear infinite;
+	-moz-animation: correct 1s linear infinite;
+	-ms-animation: correct 1s linear infinite;
+	animation: correct 1s linear infinite;
+}
+
+.cc-by {
+  clear:both;
+}
+
+@keyframes "correct" {
+ 0% {
+    -webkit-transform: scale(1.2);
+   	-moz-transform: scale(1.2);
+   	-o-transform: scale(1.2);
+   	-ms-transform: scale(1.2);
+   	transform: scale(1.2);
+ }
+ 50% {
+    -webkit-transform: scale(0.8);
+   	-moz-transform: scale(0.8);
+   	-o-transform: scale(0.8);
+   	-ms-transform: scale(0.8);
+   	transform: scale(0.8);
+ }
+ 100% {
+    -webkit-transform: scale(1.2);
+   	-moz-transform: scale(1.2);
+   	-o-transform: scale(1.2);
+   	-ms-transform: scale(1.2);
+   	transform: scale(1.2);
+ }
+
+}
+
+@-moz-keyframes correct {
+ 0% {
+   -moz-transform: scale(1.2);
+   transform: scale(1.2);
+ }
+ 50% {
+   -moz-transform: scale(0.8);
+   transform: scale(0.8);
+ }
+ 100% {
+   -moz-transform: scale(1.2);
+   transform: scale(1.2);
+ }
+
+}
+
+@-webkit-keyframes "correct" {
+ 0% {
+   -webkit-transform: scale(1.2);
+   transform: scale(1.2);
+ }
+ 50% {
+   -webkit-transform: scale(0.8);
+   transform: scale(0.8);
+ }
+ 100% {
+   -webkit-transform: scale(1.2);
+   transform: scale(1.2);
+ }
+
+}
+
+@-ms-keyframes "correct" {
+ 0% {
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+ }
+ 50% {
+   -ms-transform: scale(0.8);
+   transform: scale(0.8);
+ }
+ 100% {
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+ }
+
+
+</style>
+</head>
+<body>
+  <h1>Pux-It</h1>
+  <h2>A Spot It clone (sort of) built using <a href = "http://www.purescript.org/">PureScript</a>
+    and <a href = "http://www.alexmingoia.com/purescript-pux/">Pux</a>.</h2>
+  <p>Each pair of cards have *exactly* one image in common. Click on cards to select or unselect them.
+    If you select two cards, the common image will flash. (You can't select more than two cards.)</p>
+  <p>For gory details read <a href = "http://joelgrus.com/2016/03/30/a-simple-spot-it-clone-with-purescript-and-pux/">the blog post</a>
+    and/or check out <a href = "https://github.com/joelgrus/pux-it">the repo on GitHub</a>.</p>
+  <div id="app"></div>
+  <script src="index.js"></script>
+  <div class="cc-by">icons from <a href = "http://www.flaticon.com/packs/glypho">Glypho</a> (recolored by me)</div>
+</body>
+</html>

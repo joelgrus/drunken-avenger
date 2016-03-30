@@ -10,6 +10,7 @@ if os.environ.get('LOCALHOST'):
     SITEURL = 'http://localhost:8888'
 else:
     SITEURL = 'http://joelgrus.com'
+print("using site url", SITEURL)
 
 THEME = 'themes/pelican-svbhack-joel'
 TAGLINE = SITESUBTITLE
@@ -53,10 +54,9 @@ LINKS = []#(('Pelican', 'http://getpelican.com/'),
          #('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('Twitter', 'https://twitter.com/joelgrus'),
-          ('Facebook', 'https://www.facebook.com/joel.grus'),
-          ('Google+', 'https://plus.google.com/+JoelGrus'),
-          ('LinkedIn', 'http://www.linkedin.com/in/joelgrus/'))
+SOCIAL = (('fa fa-twitter', 'https://twitter.com/joelgrus'),
+          ('fa fa-github', 'https://github.com/joelgrus'),
+          ('fa fa-linkedin', 'http://www.linkedin.com/in/joelgrus/'))
 
 TWITTER_USERNAME = 'joelgrus'
 
