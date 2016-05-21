@@ -323,6 +323,6 @@ Anyway, that's about it. (There is also some CSS voodoo to make matching images
 
 You can check it out at
 
-<a href = "http://joelgrus.com/experiments/puxit/">http://joelgrus.com/experiments/puxit/</a>
+<a href = "http://joelgrus.com/experiments/pux-it/">http://joelgrus.com/experiments/pux-it/</a>
 
-although the bundle of all the code is almost 1MB. :(  Or fork it and make it your own.
+although the bundle of all the code is almost 1MB. :(  Or fork it and make it your own. :)
