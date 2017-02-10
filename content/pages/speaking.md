@@ -12,6 +12,24 @@ Here are some talks I have given:
 Technical
 ---------
 
+### Fizz Buzz in Tensorflow
+
+I've given this talk several times: at WrangleConf 2016, at PyData Chicago 2016,
+and at ODSC West 2016. The ODSC version was the best, but I don't think there's
+a video of it. Here are <a href = "https://docs.google.com/presentation/d/16aTSekqJdF-WjxymEnfiNvJI-StY0deCYBWiZxhPbyI/edit">the slides</a> though.
+
+### Fun with Trump Tweets
+
+I gave this talk at the Twitter Developers Seattle meetup in late 2016, about
+two fun projects I did with Trump-related tweets. There's definitely not a video
+of this, but you can look at <a href="https://docs.google.com/presentation/d/1UqbMkki1sY7ivgxcWNhWtTETsuWTIJ6V8OMPQNwAUC0/edit?usp=sharing">the slides</a>.
+
+### The Joy of [Python 3.5-style] Type Hints
+
+I pitched this to PyCon 2017, but it got rejected. So instead I used it as a
+last-minute fill in at a PyLadies Seattle meetup in January 2017. No video, but
+here are <a href = "https://docs.google.com/presentation/d/12IkXSEnkxPy0DvS4jxTVZ7H9RGbQa-F3qyNuV-aa_hg/edit?usp=sharing">the slides</a>.
+
 ### How to Teach (and Learn) Data Science
 
 I have given variations on this talk many times:
