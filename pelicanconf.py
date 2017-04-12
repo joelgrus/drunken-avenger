@@ -17,6 +17,8 @@ TAGLINE = SITESUBTITLE
 USER_LOGO_URL = '/images/joel.png'
 
 STATIC_PATHS = ['images', 'wp-content', 'experiments', 'static']
+READERS = {"html": None}
+
 
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
