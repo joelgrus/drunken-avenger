@@ -51,7 +51,7 @@
           {% for p in pages %}
           <li class="side-link"><a href="/{{ p.url }}">{{ p.title }}</a></li>
         {% endfor %}{% endif %}
-        <li class="side-link"><a href="/static/resume.pdf">Résumé</a></li>
+        <li class="side-link"><a href="/static/resume.pdf" target="_blank">Résumé</a></li>
         <li class="side-link"><a href="/archives.html">Blog Archives</a></li>
         {% for title, link in MENUITEMS %}
         <li class="side-link"><a href="{{ link }}">{{ title }}</a></li>
