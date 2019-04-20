@@ -12,11 +12,34 @@ Here are some talks I have given:
 Technical
 ---------
 
+### Modern NLP for Pre-Modern Practioners
+
+This was the opening keynote for QCon.ai 2019. It's a whirlwind tour
+of all the new hotness in NLP. [<a href = "https://docs.google.com/presentation/d/1iX0fODe0YzPg4Ak-pNqO1KiyF3INgv-Zne27XFSlu1s/edit">slides</a>]
+
+### If Not Notebooks, Then What?
+
+Invited talk at the AAAI 2019 "Workshop on Reproducible AI". [<a href = "https://docs.google.com/presentation/d/1ivK8AKgz8Hx-ZYzPC9gJyQK6tzuhR3UuhCEajFGJDlA/edit">slides</a>]
+
+### Writing Code for NLP Research
+
+A tutorial at EMNLP 2019 that I gave along with two of my teammates.
+Due to a baggage-handlers strike at Brussels Airport (really!) it wasn't recorded. [<a href = "https://docs.google.com/presentation/d/17NoJY2SnC2UMbVegaRCWA7Oca7UCZ3vHnMqBV4SUayc/edit">slides</a>]
+
 ### Fizz Buzz in Tensorflow
 
 I've given this talk several times: at WrangleConf 2016, at PyData Chicago 2016,
 and at ODSC West 2016. The ODSC version was the best, but I don't think there's
 a video of it. Here are <a href = "https://docs.google.com/presentation/d/16aTSekqJdF-WjxymEnfiNvJI-StY0deCYBWiZxhPbyI/edit">the slides</a> though.
+
+### How Becoming Not a Data Scientist Made Me a Better Data Scientist
+
+Thoughts on why data scientists should care about software engineering best practices,
+from the 2018 Southern Data Science Conference. [<a href="https://docs.google.com/presentation/d/1jk-qrVKCb0-P9P4BVzH75gcVhp5Dy5n1CP_gKnHMNY0/edit">slides</a>]
+
+### I Don't Like Notebooks
+
+From JupyterCon 2018 (really!). This talk is possibly what I'm most famous for. If you like memes this is the talk for you. [<a href = "https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/edit#slide=id.g362da58057_0_1">slides</a>]
 
 ### Fun with Trump Tweets
 
