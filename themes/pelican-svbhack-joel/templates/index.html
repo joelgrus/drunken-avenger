@@ -4,12 +4,12 @@
 {% for article in articles_page.object_list %}
 <article>
   <div class="article_title">
-    <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+    <h2><a href="/{{ article.url }}">{{ article.title }}</a></h2>
   </div>
   <div class="article_text">
     {{ article.summary }}
   </div>
-  <a class="date-permalink" href="{{ SITEURL }}/{{ article.url }}">
+  <a class="date-permalink" href="/{{ article.url }}">
   {{ article.date.strftime("%Y-%m-%d %I:%M %p") }}</a>
 </article>
 {% if not loop.last %}
