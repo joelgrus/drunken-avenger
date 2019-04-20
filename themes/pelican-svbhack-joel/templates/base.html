@@ -44,13 +44,14 @@
         <img src="/theme/images/logo.png" alt="logo">
         {% endif %}
       </a>
-      <h2><a class="name" href="">{{ AUTHOR }}</a></h2>
+      <h2><a class="name" href="{{ SITEURL }}">{{ AUTHOR }}</a></h2>
       <p>{{ TAGLINE }}</p>
       <ul class="side-links">
         {% if DISPLAY_PAGES_ON_MENU %}
           {% for p in pages %}
           <li class="side-link"><a href="/{{ p.url }}">{{ p.title }}</a></li>
         {% endfor %}{% endif %}
+        <li class="side-link"><a href="/static/resume.pdf">Résumé</a></li>
         <li class="side-link"><a href="/archives.html">Blog Archives</a></li>
         {% for title, link in MENUITEMS %}
         <li class="side-link"><a href="{{ link }}">{{ title }}</a></li>
