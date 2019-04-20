@@ -9,7 +9,7 @@ SITESUBTITLE = u'is sort of a famous author'
 if os.environ.get('LOCALHOST'):
     SITEURL = 'http://localhost:8888'
 else:
-    SITEURL = 'http://joelgrus.com'
+    SITEURL = os.environ.get('SITEURL', 'https://joelgrus.com')
 print("using site url", SITEURL)
 
 THEME = 'themes/pelican-svbhack-joel'
