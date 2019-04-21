@@ -429,7 +429,7 @@ $ pulp run
 
 it should retweet all the things!
 
-<img src="http://i.imgur.com/l5Q0wHw.jpg" alt="RETWEET ALL THE THINGS!">
+<img src="https://i.imgur.com/l5Q0wHw.jpg" alt="RETWEET ALL THE THINGS!">
 
 Final note: this probably seems like a lot of work. It *was* a lot of work. But
 most of the work was creating a (bare-bones, toy) PureScript `Twitter` library.
