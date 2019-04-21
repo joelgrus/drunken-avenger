@@ -22,7 +22,7 @@ performances, but this early set (which contains 4 other videos),
 performed in a pitch-black auditorium in front of a few dozen Danes
 sitting passively on the floor, is stripped down and near-perfect.
 
-<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/NZPcASnovAQ&amp;hl=en_US&amp;fs=1?rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/NZPcASnovAQ&amp;hl=en_US&amp;fs=1?rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
+<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/NZPcASnovAQ&amp;hl=en_US&amp;fs=1?rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/NZPcASnovAQ&amp;hl=en_US&amp;fs=1?rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
 
 2\. [Chicago Transit Authority - I'm a Man - Beat Club 1968
 (?)](http://www.youtube.com/watch?v=zxoVfqZDlj0)
@@ -32,7 +32,7 @@ If you're my age, you probably think of Chicago as purveyors of cheesy
 YouTube, you can see that there was a point in the distant past where
 they absolutely killed it.
 
-<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/zxoVfqZDlj0&amp;hl=en_US&amp;fs=1?rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/zxoVfqZDlj0&amp;hl=en_US&amp;fs=1?rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
+<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/zxoVfqZDlj0&amp;hl=en_US&amp;fs=1?rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/zxoVfqZDlj0&amp;hl=en_US&amp;fs=1?rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
 
 3\. [Edgar Winter Group -
 Frankenstein](http://www.youtube.com/watch?v=x1mV_5-bRPo)
@@ -42,7 +42,7 @@ yes, Rick Derringer is approximately 3 feet tall, but Edgar keeps
 switching instruments mid-song like some sort of albino Scientologist
 maniac, and this is a fantastic jam.
 
-<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/x1mV_5-bRPo&amp;hl=en_US&amp;fs=1?rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/x1mV_5-bRPo&amp;hl=en_US&amp;fs=1?rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
+<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/x1mV_5-bRPo&amp;hl=en_US&amp;fs=1?rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/x1mV_5-bRPo&amp;hl=en_US&amp;fs=1?rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
 
 4\. [Beatles - Ticket to Ride - Shea Stadium
 1965](http://www.youtube.com/watch?v=egRaEoS3gP8)
@@ -60,6 +60,6 @@ Special](http://www.youtube.com/watch?v=mPLfDBcu_U0)
 As far as I'm concerned, hippies have only ever done two good things.
 One is putting cookie dough in ice cream. The other is this song.
 
-<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/mPLfDBcu_U0&amp;hl=en_US&amp;fs=1?rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/mPLfDBcu_U0&amp;hl=en_US&amp;fs=1?rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
+<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/mPLfDBcu_U0&amp;hl=en_US&amp;fs=1?rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/mPLfDBcu_U0&amp;hl=en_US&amp;fs=1?rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
 
 Next time in the concert series: "Hair Metal / Crunk."
