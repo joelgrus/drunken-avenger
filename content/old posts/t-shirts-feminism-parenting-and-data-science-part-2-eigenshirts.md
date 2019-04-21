@@ -85,15 +85,15 @@ component value, and the "anti-eigenshirt".
 </td></tr>https://joelgrus.comhttps://joelgrus.comhttps://joelgrus.comhttps://joelgrus.comhttps://joelgrus.com
 <tr><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/4_eigenshirt.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/4_most.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/4_none.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/4_least.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/4_inverted_eigenshirt.png">
 </td></tr>https://joelgrus.comhttps://joelgrus.comhttps://joelgrus.comhttps://joelgrus.comhttps://joelgrus.com
-<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/5_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/5_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/5_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/5_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/5_inverted_eigenshirt.png">
+<tr><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/5_eigenshirt.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/5_most.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/5_none.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/5_least.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/5_inverted_eigenshirt.png">
 </td></tr>
-<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/6_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/6_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/6_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/6_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/6_inverted_eigenshirt.png">
+<tr><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/6_eigenshirt.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/6_most.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/6_none.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/6_least.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/6_inverted_eigenshirt.png">
 </td></tr>
-<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/7_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/7_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/7_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/7_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/7_inverted_eigenshirt.png">
+<tr><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/7_eigenshirt.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/7_most.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/7_none.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/7_least.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/7_inverted_eigenshirt.png">
 </td></tr>
-<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/8_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/8_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/8_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/8_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/8_inverted_eigenshirt.png">
+<tr><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/8_eigenshirt.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/8_most.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/8_none.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/8_least.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/8_inverted_eigenshirt.png">
 </td></tr>
-<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/9_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/9_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/9_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/9_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/9_inverted_eigenshirt.png">
+<tr><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/9_eigenshirt.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/9_most.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/9_none.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/9_least.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/9_inverted_eigenshirt.png">
 </td></tr>
 </table>
 
@@ -119,7 +119,7 @@ The Principal Component representation of each shirt is a 10-dimensional
 vector representing (roughly) where it fits on each of these spectra.
 For instance, the monkey shirt
 
-![monkey\_shirt](http://joelgrus.com/wp-content/uploads/2013/06/monkey_shirt.jpg)
+![monkey\_shirt](https://joelgrus.com/wp-content/uploads/2013/06/monkey_shirt.jpg)
 
 is represented by the vectorhttps://joelgrus.com
 
@@ -131,7 +131,7 @@ the biggest components of which are "orange" (eigenshirt \#1), "dark"
 If we try to reconstruct the image using just these ten components, we
 get
 
-![monkey\_shirt\_reconstructed](http://joelgrus.com/wp-content/uploads/2013/06/monkey_shirt_reconstructed.png)
+![monkey\_shirt\_reconstructed](https://joelgrus.com/wp-content/uploads/2013/06/monkey_shirt_reconstructed.png)
 
 which seems to have captured *orange*, *short sleeve*, and *dark
 graphic*. You certainly can't tell it's a monkey, though.
@@ -167,19 +167,19 @@ Superlatives
 
 **Girliest Girl*https://joelgrus.comsed on shape and colors)
 
-![girliest\_girl](http://joelgrus.com/wp-content/uploads/2013/06/girliest_girl.jpg)
+![girliest\_girl](https://joelgrus.com/wp-content/uploads/2013/06/girliest_girl.jpg)
 
 **Girliest Boy** https://joelgrus.comgain)
 
-![girliest\_boy](http://joelgrus.com/wp-content/uploads/2013/06/girliest_boy.jpg)
+![girliest\_boy](https://joelgrus.com/wp-content/uploads/2013/06/girliest_boy.jpg)
 
 **Boyiest Boy** (da Bears)
 
-![boyiest\_boy](http://joelgrus.com/wp-content/uploads/2013/06/boyiest_boy.jpg)
+![boyiest\_boy](https://joelgrus.com/wp-content/uploads/2013/06/boyiest_boy.jpg)
 
 **Boyiest Girl** (same one as last time!)
 
-![boyiest\_girl](http://joelgrus.com/wp-content/uploads/2013/06/boyiest_girl.jpg)
+![boyiest\_girl](https://joelgrus.com/wp-content/uploads/2013/06/boyiest_girl.jpg)
 
 This is all very interesting and hints at [Platonic
 ideal](https://en.wikipedia.org/wiki/Platonic_idealism) shirts (the
