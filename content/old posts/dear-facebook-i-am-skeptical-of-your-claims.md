@@ -11,7 +11,7 @@ something called "Burn Notice."
 
 Nonetheless, for some reason your latest doesn't ring true to me:
 
-![](http://joelgrus.com/wp-content/uploads/2010/06/palinwholefoods.png "palinwholefoods")
+![](https://joelgrus.com/wp-content/uploads/2010/06/palinwholefoods.png "palinwholefoods")
 
 ------------------------------------------------------------------------
 

@@ -4,7 +4,7 @@ Category: Code, Twitter, Node, Javascript, AWS, Make_GreatAgain
 
 [The second in an (at least) 6-part series, all code <a href = "https://github.com/joelgrus/polyglot-twitter-bot">on GitHub</a> as always.]
 
-1. <a href="http://joelgrus.com/2015/12/29/polyglot-twitter-bot-part-1-nodejs/">Node.js</a>
+1. <a href="https://joelgrus.com/2015/12/29/polyglot-twitter-bot-part-1-nodejs/">Node.js</a>
 2. <b>Node.js + AWS Lambda</b>
 3. Python 2.7 + AWS Lambda
 4. Purescript
@@ -17,7 +17,7 @@ without having to actually run a server. There's a lot of interesting things you
 can do with this functionality, one of which is "run a Twitter bot".
 
 These days Lambda allows Node.js, Python, or Java functions, but for now we'll
-modify and use the Node.js bot we built <a href="http://joelgrus.com/2015/12/29/polyglot-twitter-bot-part-1-nodejs/">previously</a>.
+modify and use the Node.js bot we built <a href="https://joelgrus.com/2015/12/29/polyglot-twitter-bot-part-1-nodejs/">previously</a>.
 
 The only trick is that we need to fit it into the <a href = "http://docs.aws.amazon.com/lambda/latest/dg/programming-model.html">Lambda execution model</a>.
 
@@ -62,7 +62,7 @@ $ zip -r twitter.zip *
 
 This gets me a ~1.3MB zip file. Now go to
 <a href="https://console.aws.amazon.com/lambda/">your AWS console</a>
-and click "Create a Lambda Function".  
+and click "Create a Lambda Function".
 
 <img src="/images/create_a_lambda_function.png">
 

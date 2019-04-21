@@ -8,4 +8,4 @@ Slug: what-kind-of-data-scientist-are-you-hereifixeditforyou
 original](http://strata.oreilly.com/2013/06/theres-more-than-one-kind-of-data-scientist.html)
 said nothing to me about my life.
 
-[![whatKindOfDataScientistAreYou](http://joelgrus.com/wp-content/uploads/2014/01/whatKindOfDataScientistAreYou.png)](http://joelgrus.com/wp-content/uploads/2014/01/whatKindOfDataScientistAreYou.png)
+[![whatKindOfDataScientistAreYou](https://joelgrus.com/wp-content/uploads/2014/01/whatKindOfDataScientistAreYou.png)](https://joelgrus.com/wp-content/uploads/2014/01/whatKindOfDataScientistAreYou.png)

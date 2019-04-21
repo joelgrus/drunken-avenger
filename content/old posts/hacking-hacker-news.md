@@ -10,7 +10,7 @@ People submit links to news stories and blog posts, questions, examples,
 and so on. Other people vote them up or down, and still other people
 argue about them in the comments sections.
 
-![](http://joelgrus.com/wp-content/uploads/2012/02/hn.png "hn")
+![](https://joelgrus.com/wp-content/uploads/2012/02/hn.png "hn")
 
 If you have unlimited time on your hands, it's an excellent firehose for
 things related to hacking. If your time is more limited, it's more
@@ -18,7 +18,7 @@ challenging. People submit hundreds of stories every day, and even if
 you only pay attention to the ones that get enough votes to make it to
 the homepage, it's still overwhelming to keep up:
 
-![](http://joelgrus.com/wp-content/uploads/2012/02/hackernewsunread.png "hackernewsunread")
+![](https://joelgrus.com/wp-content/uploads/2012/02/hackernewsunread.png "hackernewsunread")
 
 What's more, a lot of the stories are about topics that are boring, like
 OSX and iPads and group couponing. So for some time I've been thinking
@@ -89,7 +89,7 @@ unlabeled stories from the database, one-at-a-time shows them to me and
 asks whether I'd like to click on the story or not, and then saves that
 judgment back to the database.
 
-![](http://joelgrus.com/wp-content/uploads/2012/02/judger.png "judger")
+![](https://joelgrus.com/wp-content/uploads/2012/02/judger.png "judger")
 
 At first I was judging them *most-recent-first*, but then I realized I
 was biasing my traning set toward SOPA and PIPA, and so I changed it to
@@ -143,7 +143,7 @@ classify](http://en.wikipedia.org/wiki/Naive_Bayes_classifier#Document_Classific
 the held-out test data, and plot a [Precision-Recall
 curve](http://en.wikipedia.org/wiki/Precision_and_recall)
 
-![](http://joelgrus.com/wp-content/uploads/2012/02/pr.png "pr")
+![](https://joelgrus.com/wp-content/uploads/2012/02/pr.png "pr")
 
 **Step 7 : Classifying the Data**
 
@@ -180,11 +180,11 @@ since the last time I posted. Eventually I realized that I should rank
 the stories by *interesting-to-Joel*-ness, so that the ones I'd most
 want to read would be at the top:
 
-![](http://joelgrus.com/wp-content/uploads/2012/02/hnj_top.png "hnj_top")
+![](https://joelgrus.com/wp-content/uploads/2012/02/hnj_top.png "hnj_top")
 
 and the ones I want to read least would be at the bottom:
 
-![](http://joelgrus.com/wp-content/uploads/2012/02/hnj_bottom.png "hnj_bottom")
+![](https://joelgrus.com/wp-content/uploads/2012/02/hnj_bottom.png "hnj_bottom")
 
 The blog itself is at
 

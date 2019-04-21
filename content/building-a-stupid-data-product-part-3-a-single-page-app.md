@@ -451,7 +451,7 @@ main = renderToDOM "#app" =<< app
 ## The Result
 
 You can see it up and running
-<a href = "http://joelgrus.com/experiments/science-questions/">here</a>.
+<a href = "https://joelgrus.com/experiments/science-questions/">here</a>.
 (Fear my mad CSS / design skills.)
 
 The front-end should be totally robust, but the back-end question service is running

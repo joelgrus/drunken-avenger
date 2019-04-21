@@ -5,7 +5,7 @@ Tags: Uncategorized
 Slug: t-shirts-feminism-parenting-and-data-science-part-2-eigenshirts
 
 (You might want to read [Part
-1](http://joelgrus.com/2013/06/19/t-shirts-feminism-parenting-and-data-science-part-1-colors/)
+1](https://joelgrus.com/2013/06/19/t-shirts-feminism-parenting-and-data-science-part-1-colors/)
 first.)
 
 When last we left off, we'd built a model using *shirt colors* to
@@ -75,16 +75,26 @@ component value, and the "anti-eigenshirt".
 <tr>
 <th>Eigenshirt</th><th>Most Eigenshirty</th><th>Not Eigenshirty</th><th>Most Anti-Eigenshirty</th><th>Anti-Eigenshirt</th>
 </tr>
-<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/0_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/0_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/0_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/0_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/0_inverted_eigenshirt.png"></td></tr>
-<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/1_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/1_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/1_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/1_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/1_inverted_eigenshirt.png"></td></tr>
-<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/2_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/2_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/2_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/2_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/2_inverted_eigenshirt.png"></td></tr>
-<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/3_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/3_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/3_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/3_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/3_inverted_eigenshirt.png"></td></tr>
-<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/4_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/4_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/4_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/4_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/4_inverted_eigenshirt.png"></td></tr>
-<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/5_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/5_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/5_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/5_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/5_inverted_eigenshirt.png"></td></tr>
-<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/6_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/6_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/6_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/6_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/6_inverted_eigenshirt.png"></td></tr>
-<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/7_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/7_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/7_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/7_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/7_inverted_eigenshirt.png"></td></tr>
-<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/8_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/8_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/8_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/8_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/8_inverted_eigenshirt.png"></td></tr>
-<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/9_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/9_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/9_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/9_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/9_inverted_eigenshirt.png"></td></tr>
+<tr><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/0_eigenshirt.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/0_most.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/0_none.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/0_least.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/0_inverted_eigenshirt.png">
+</td></tr>https://joelgrus.comhttps://joelgrus.comhttps://joelgrus.comhttps://joelgrus.comhttps://joelgrus.com
+<tr><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/1_eigenshirt.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/1_most.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/1_none.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/1_least.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/1_inverted_eigenshirt.png">
+</td></tr>https://joelgrus.comhttps://joelgrus.comhttps://joelgrus.comhttps://joelgrus.comhttps://joelgrus.com
+<tr><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/2_eigenshirt.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/2_most.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/2_none.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/2_least.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/2_inverted_eigenshirt.png">
+</td></tr>https://joelgrus.comhttps://joelgrus.comhttps://joelgrus.comhttps://joelgrus.comhttps://joelgrus.com
+<tr><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/3_eigenshirt.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/3_most.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/3_none.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/3_least.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/3_inverted_eigenshirt.png">
+</td></tr>https://joelgrus.comhttps://joelgrus.comhttps://joelgrus.comhttps://joelgrus.comhttps://joelgrus.com
+<tr><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/4_eigenshirt.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/4_most.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/4_none.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/4_least.png"></td><td><img width="140" src="https://joelgrus.com/wp-content/uploads/2013/06/4_inverted_eigenshirt.png">
+</td></tr>https://joelgrus.comhttps://joelgrus.comhttps://joelgrus.comhttps://joelgrus.comhttps://joelgrus.com
+<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/5_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/5_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/5_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/5_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/5_inverted_eigenshirt.png">
+</td></tr>
+<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/6_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/6_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/6_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/6_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/6_inverted_eigenshirt.png">
+</td></tr>
+<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/7_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/7_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/7_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/7_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/7_inverted_eigenshirt.png">
+</td></tr>
+<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/8_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/8_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/8_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/8_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/8_inverted_eigenshirt.png">
+</td></tr>
+<tr><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/9_eigenshirt.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/9_most.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/9_none.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/9_least.png"></td><td><img width="140" src="http://joelgrus.com/wp-content/uploads/2013/06/9_inverted_eigenshirt.png">
+</td></tr>
 </table>
 
 If I were to try to give qualitative descriptions of these ten
@@ -99,7 +109,7 @@ sleeveless</li>
 <li>Component 4: ?</li>
 <li>Component 5: Green -\> Purple</li>
 <li>Component 6: White trim / dark shirt -\> Dark trim / white shirt</li>
-<li>Component 7: Dark long sleeve / white sleeveless -\> White long sleeve
+<li>Component 7: https://joelgrus.comwhite sleeveless -\> White long sleeve
 / dark sleeveless</li>
 <li>Component 8: White shirt / dark print -\> Dark shirt / white print</li>
 <li>Component 9: ?</li>
@@ -111,7 +121,7 @@ For instance, the monkey shirt
 
 ![monkey\_shirt](http://joelgrus.com/wp-content/uploads/2013/06/monkey_shirt.jpg)
 
-is represented by the vector
+is represented by the vectorhttps://joelgrus.com
 
 [ -9313, 10067, -149, -4013, -2147, 1574, -296, -954, 1729, -196]
 
@@ -137,7 +147,7 @@ Component 0: -2.71 (eigenshirt is girlish)\
  Component 1: -2.56 (girlish)\
  Component 2: 3.55 (boyish)\
  Component 3: 0.53 (weakly boyish)\
- Component 4: -0.56 (weakly girlish)\
+ Component 4: -0.56 (https://joelgrus.com
  Component 5: 5.43 (boyish)\
  Component 6: -15.9 (very girlish)\
  Component 7: -4.68 (girlish)\
@@ -147,19 +157,19 @@ Component 0: -2.71 (eigenshirt is girlish)\
 As before, we can look at how the shirts are distributed as a function
 of the score they get from the model:
 
-![shirts\_by\_score](http://joelgrus.com/wp-content/uploads/2013/06/shirts_by_score1.png)
+![shirts\_by\_scorhttps://joelgrus.comcom/wp-content/uploads/2013/06/shirts_by_score1.png)
 
 The miscategorized shirts generally have low (close to 0) scores, except
 for one particularly "girly" boys shirt that we'll see below.
-
+https://joelgrus.com
 Superlatives
 ------------
 
-**Girliest Girl** (looks like is based on shape and colors)
+**Girliest Girl*https://joelgrus.comsed on shape and colors)
 
 ![girliest\_girl](http://joelgrus.com/wp-content/uploads/2013/06/girliest_girl.jpg)
 
-**Girliest Boy** (shape and colors again)
+**Girliest Boy** https://joelgrus.comgain)
 
 ![girliest\_boy](http://joelgrus.com/wp-content/uploads/2013/06/girliest_boy.jpg)
 

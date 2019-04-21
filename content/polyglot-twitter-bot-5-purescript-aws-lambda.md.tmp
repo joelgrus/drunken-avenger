@@ -4,10 +4,10 @@ Category: Code, Twitter, PureScript, AWS, Make_GreatAgain
 
 [The fifth in an (at least) 6-part series, all code <a href = "https://github.com/joelgrus/polyglot-twitter-bot">on GitHub</a> as always.]
 
-1. <a href="http://joelgrus.com/2015/12/29/polyglot-twitter-bot-part-1-nodejs/">Node.js</a>
-2. <a href="http://joelgrus.com/2015/12/29/polyglot-twitter-bot-part-2-nodejs-aws-lambda/">Node.js + AWS Lambda</a>
-3. <a href="http://joelgrus.com/2015/12/30/polyglot-twitter-bot-part-3-python-27-aws-lambda/">Python 2.7 + AWS Lambda</a>
-4. <a href="http://joelgrus.com/2015/12/31/polyglot-twitter-bot-part-4-purescript/">PureScript</a>
+1. <a href="https://joelgrus.com/2015/12/29/polyglot-twitter-bot-part-1-nodejs/">Node.js</a>
+2. <a href="https://joelgrus.com/2015/12/29/polyglot-twitter-bot-part-2-nodejs-aws-lambda/">Node.js + AWS Lambda</a>
+3. <a href="https://joelgrus.com/2015/12/30/polyglot-twitter-bot-part-3-python-27-aws-lambda/">Python 2.7 + AWS Lambda</a>
+4. <a href="https://joelgrus.com/2015/12/31/polyglot-twitter-bot-part-4-purescript/">PureScript</a>
 5. <b>PureScript + AWS Lambda</b>
 6. Bonus: PureScript + Twitter Streaming
 

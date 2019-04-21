@@ -98,7 +98,7 @@ boys shirt and more negative scores meaning more likely girls shirt. You
 can see that while there's a muddled middle, when the model is really
 confident (in either direction), it's *always* right.
 
-[![shirts\_by\_score](http://joelgrus.com/wp-content/uploads/2013/06/shirts_by_score-300x190.png)](http://joelgrus.com/wp-content/uploads/2013/06/shirts_by_score.png)
+[![shirts\_by\_score](https://joelgrus.com/wp-content/uploads/2013/06/shirts_by_score-300x190.png)](https://joelgrus.com/wp-content/uploads/2013/06/shirts_by_score.png)
 
 If we dig into precision and recall, we see
 
@@ -117,35 +117,35 @@ Given this model, we can identify
 
 The Girliest Girls Shirt (no argument from me):
 
-![girliest\_girl\_shirt](http://joelgrus.com/wp-content/uploads/2013/06/girliest_girl_shirt.jpg)
+![girliest\_girl\_shirt](https://joelgrus.com/wp-content/uploads/2013/06/girliest_girl_shirt.jpg)
 
 The Boyiest Girls Shirt (must be the black-and-white and lack of
 color?):
 
-![boyiest\_girl\_shirt](http://joelgrus.com/wp-content/uploads/2013/06/boyiest_girl_shirt.jpg)
+![boyiest\_girl\_shirt](https://joelgrus.com/wp-content/uploads/2013/06/boyiest_girl_shirt.jpg)
 
 The Girliest Boys Shirt (I can see that if you just look at colors):
 
-![girliest\_boy\_shirt](http://joelgrus.com/wp-content/uploads/2013/06/girliest_boy_shirt.jpg)
+![girliest\_boy\_shirt](https://joelgrus.com/wp-content/uploads/2013/06/girliest_boy_shirt.jpg)
 
 The Boyiest Boys Shirt (a slightly odd choice, but I guess those are all
 boy-ish colors?):
 
-![boyiest\_boy\_shirt](http://joelgrus.com/wp-content/uploads/2013/06/boyiest_boy_shirt.jpg)
+![boyiest\_boy\_shirt](https://joelgrus.com/wp-content/uploads/2013/06/boyiest_boy_shirt.jpg)
 
 The Most Androgynous Shirt (this one is most likely some kind of image
 compression artifact, the main colors are boyish but the image also has
 some girlish purple pixels in it that cancel those out):
 
-![most\_androgynous](http://joelgrus.com/wp-content/uploads/2013/06/most_androgynous.jpg)
+![most\_androgynous](https://joelgrus.com/wp-content/uploads/2013/06/most_androgynous.jpg)
 
 The Blandest Shirt (for sure!):
 
-![blandest](http://joelgrus.com/wp-content/uploads/2013/06/blandest.jpg)
+![blandest](https://joelgrus.com/wp-content/uploads/2013/06/blandest.jpg)
 
 The Most Colorful Shirt (no argument with this one either!):
 
-![coloriest](http://joelgrus.com/wp-content/uploads/2013/06/coloriest.jpg)
+![coloriest](https://joelgrus.com/wp-content/uploads/2013/06/coloriest.jpg)
 
 **Scores for Colors**
 

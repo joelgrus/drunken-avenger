@@ -39,7 +39,7 @@ provided [sample questions](http://fcat.fldoe.org/fcatit09.asp) on the
 web. The questions are not particularly interesting, nor are they
 particularly hard:
 
-![](http://joelgrus.com/wp-content/uploads/2011/12/compostbox.png "compostbox")
+![](https://joelgrus.com/wp-content/uploads/2011/12/compostbox.png "compostbox")
 
 (Although the test is quite plainly biased against students from
 cultures that lack access to composting.)

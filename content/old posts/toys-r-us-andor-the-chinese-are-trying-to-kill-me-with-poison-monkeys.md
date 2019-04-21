@@ -13,7 +13,7 @@ like "Law and Order: Criminal Intent" and "Law and Order: Special
 Victims Unit" and "Law and Order: Criminal Intent but with Jeff
 Goldblum."
 
-![](http://joelgrus.com/wp-content/uploads/2010/08/gulabjamun-768x1024.jpg "gulabjamun")
+![](https://joelgrus.com/wp-content/uploads/2010/08/gulabjamun-768x1024.jpg "gulabjamun")
 
 Then a few days ago we were at the mall, so we popped into ToysRUs again
 to see what was new on the unnaturally-colored monkey front. This season

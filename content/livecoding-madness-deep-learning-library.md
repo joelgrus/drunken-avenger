@@ -2,10 +2,10 @@ Title: Livecoding Madness - Building a Deep Learning Library
 Date: 2017-12-04 12:00
 Category: Python, Deep Learning, Livecoding
 
-I give <a href = "http://joelgrus.com/speaking/">talks</a>,
+I give <a href = "https://joelgrus.com/speaking/">talks</a>,
 and this fall my talk has been to live code a deep learning
 library (and use the resulting library to solve
-<a href = "http://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/">Fizz Buzz</a>).
+<a href = "https://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/">Fizz Buzz</a>).
 
 You probably didn't get to see my talk,
 which is why I made a

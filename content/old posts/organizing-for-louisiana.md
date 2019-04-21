@@ -36,7 +36,7 @@ suggest that he demonstrate leadership by returning to his roots:
 -   commission an [iconic logo](http://en.wikipedia.org/wiki/Obama_logo)
     for the Gulf cleanup efforts:
 
-    ![](http://joelgrus.com/wp-content/uploads/2010/06/oillogo.png "oillogo")
+    ![](https://joelgrus.com/wp-content/uploads/2010/06/oillogo.png "oillogo")
 
 -   I don't know if a video of [Obama
     girl](http://en.wikipedia.org/wiki/I_Got_a_Crush..._on_Obama)
@@ -48,10 +48,9 @@ suggest that he demonstrate leadership by returning to his roots:
     "[BOOM](http://en.wikipedia.org/wiki/Boom_%28containment%29)"
     underneath.
 
-    ![](http://joelgrus.com/wp-content/uploads/2010/06/BOOM.png "BOOM")
+    ![](https://joelgrus.com/wp-content/uploads/2010/06/BOOM.png "BOOM")
 
 -   finally, just in case none of the previous approaches to leadership
     helps, I suggest some sort of [music
     video](http://en.wikipedia.org/wiki/Yes_We_Can) featuring hip-hop
     stars and celebrity actors. If that doesn't work, nothing will!
-

@@ -3,7 +3,7 @@ Date: 2016-03-30 12:00
 Category: Mathematics, Code, Spot it, PureScript
 
 Long-time readers may recall that last year I wrote a blog post
-about <a href = "http://joelgrus.com/2015/06/12/on-the-mathematics-of-spot-it/">the
+about <a href = "https://joelgrus.com/2015/06/12/on-the-mathematics-of-spot-it/">the
 mathematics of Spot It</a>. (For those who don't recall, Spot It is a game where
 you have a deck of cards, each of which has 8 pictures on it, where through the
 magical mathematics of finite projective planes *every* two cards in the deck have
@@ -29,7 +29,7 @@ createDeck n = map (toIndexes <<< pointsOnLine n) (allLines n)
 Which generates all the lines (cards) in the finite projective plane,
 maps each to the set of points (images) it contains, and then replaces each
 point (image) with an (arbitrary but consistent) integer (basically, its index
-in the array of all points).  
+in the array of all points).
 
 After which, a "card" looks like `[1,2,3,4,5,6,7,8]`. (If you're interested in
 the logic for how the cards are generated, read the previous post.)
@@ -323,6 +323,6 @@ Anyway, that's about it. (There is also some CSS voodoo to make matching images
 
 You can check it out at
 
-<a href = "http://joelgrus.com/experiments/pux-it/">http://joelgrus.com/experiments/pux-it/</a>
+<a href = "https://joelgrus.com/experiments/pux-it/">https://joelgrus.com/experiments/pux-it/</a>
 
 although the bundle of all the code is almost 1MB. :(  Or fork it and make it your own. :)

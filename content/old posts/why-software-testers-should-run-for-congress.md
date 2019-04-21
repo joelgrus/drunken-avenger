@@ -5,7 +5,7 @@ Tags: Politics, Technology
 Slug: why-software-testers-should-run-for-congress
 
 In my [previous
-post](http://joelgrus.com/2010/07/19/why-software-developers-shouldnt-run-for-congress/)
+post](https://joelgrus.com/2010/07/19/why-software-developers-shouldnt-run-for-congress/)
 "Why Software Developers Shouldn't Run for Congress" I poked fun at the
 idea, proposed by a pie-in-the-sky,
 government-would-work-well-if-only-it-were-run-by-*my*-kind-of-people
@@ -43,7 +43,7 @@ systems](http://www.dailybreeze.com/news/ci_15485061), full of [hidden
 side
 effects](http://en.wikipedia.org/wiki/Side_effect_%28computer_science%29),
 [functionality that wasn't in the
-spec](http://joelgrus.com/2010/07/21/the-gold-standard-of-health-care-reform/),
+spec](https://joelgrus.com/2010/07/21/the-gold-standard-of-health-care-reform/),
 [backdoors](http://www.washingtontimes.com/news/2010/jul/14/quotas-by-proxy-in-dodd-frank-bill/),
 and [billion-dollar
 bugs](http://voices.washingtonpost.com/economy-watch/2010/03/the_price_of_healthcare_reform.html).

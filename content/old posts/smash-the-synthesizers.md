@@ -12,7 +12,7 @@ threshers](http://en.wikipedia.org/wiki/Threshing_machine#Early_social_impacts),
 and [sex robots](http://news.cnet.com/8301-17938_105-10432597-1.html),
 the "synthesizer" must be stopped.
 
-![](http://joelgrus.com/wp-content/uploads/2010/07/luddites-300x287.jpg "luddites")
+![](https://joelgrus.com/wp-content/uploads/2010/07/luddites-300x287.jpg "luddites")
 
 So warns violinist [Paul
 Woodiel](http://www.nytimes.com/2010/07/11/opinion/11woodiel.html), who

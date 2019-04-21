@@ -79,7 +79,7 @@ from scratch and used it to "posterize" images.
 
 A lightning talk for the "Seattle Data, Analytics, and Machine Learning"
 meetup. There's no video of it, but I wrote up a two part blog post
-(<a href="http://joelgrus.com/2013/06/19/t-shirts-feminism-parenting-and-data-science-part-1-colors/">part 1</a> <a href = "http://joelgrus.com/2013/06/24/t-shirts-feminism-parenting-and-data-science-part-2-eigenshirts/">part 2</a>)
+(<a href="https://joelgrus.com/2013/06/19/t-shirts-feminism-parenting-and-data-science-part-1-colors/">part 1</a> <a href = "https://joelgrus.com/2013/06/24/t-shirts-feminism-parenting-and-data-science-part-2-eigenshirts/">part 2</a>)
 
 ### F\# for Startups
 

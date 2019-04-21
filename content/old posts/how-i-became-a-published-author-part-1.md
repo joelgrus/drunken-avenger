@@ -43,7 +43,7 @@ while I became practiced in the twin literary techniques of *making
 stuff up* and *referencing things that had happened on "Charles in
 Charge" as if they'd actually happened in real life*.
 
-[![](http://joelgrus.com/wp-content/uploads/2010/06/scott-baio2.jpg "scott baio2")](http://joelgrus.com/wp-content/uploads/2010/06/scott-baio2.jpg)
+[![](https://joelgrus.com/wp-content/uploads/2010/06/scott-baio2.jpg "scott baio2")](https://joelgrus.com/wp-content/uploads/2010/06/scott-baio2.jpg)
 
 Eventually I went out and took a UCLA Extension "Introduction to Fiction
 Writing" class, taught by [Noel
