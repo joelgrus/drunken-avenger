@@ -27,11 +27,11 @@ goals of not getting hit by any trucks and not getting car-doored.
 
 If I don't come back, avenge my death.
 
-<small>\
+<small>
  1. The first time I tried it, all the people I was riding with asked me
 how I liked it. "Well," I offered, "you know how sometimes you get an
 extra sense and it takes a while for your brain to figure out how to
 integrate its inputs with your pre-existing sensory data?" Not a
 transhumanist in the bunch, it turned out, and so they all looked at me
-like I was crazy.\
+like I was crazy.
  </small>
