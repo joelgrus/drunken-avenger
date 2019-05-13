@@ -6,7 +6,8 @@ Order: 20
 
 <h1>Data Science from Scratch, second edition</h1>
 
-The second edition is now available, get it <a href = "https://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/1492041130">from Amazon</a> or on Safari!
+The second edition is now available, get it <a href = "https://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/1492041130">from Amazon</a> or
+get the PDF from <a href = "https://www.ebooks.com/en-us/209663126/data-science-from-scratch/grus-joel/">ebooks.com</a>, or read it on Safari!
 
 (For now the <a href="http://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/149190142X">first edition is still available too</a>.)
 

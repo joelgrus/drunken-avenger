@@ -2,7 +2,7 @@ Title: Data Science From Scratch: Second Edition
 Date: 2019-05-13 12:00
 Category: Life, Data Science, Writing
 
-I am thrilled to announce that the second edition of <i>Data Science from Scratch</i> is now available! (buy from <a href = "https://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/1492041130">Amazon</a> or your other favorite bookstore, or read on Safari).
+I am thrilled to announce that the second edition of <i>Data Science from Scratch</i> is now available! (buy from <a href = "https://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/1492041130">Amazon</a> or your other favorite bookstore, or read on Safari, or get a PDF from <a href = "https://www.ebooks.com/en-us/209663126/data-science-from-scratch/grus-joel/">ebooks.com</a> it looks like.)
 
 It's been almost exactly four years since the first edition came out,
 and over that time it's helped dozens of people learn data science, Python, or possibly some combination of the two.
