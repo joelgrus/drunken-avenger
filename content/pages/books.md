@@ -4,11 +4,13 @@ Author: joelgrus
 Slug: books
 Order: 20
 
-<h1>Data Science from Scratch</h1>
-Joel's latest book *Data Science From Scratch: First Principles with Python* 
-is now available from <a href="http://shop.oreilly.com/product/0636920033400.do">O'Reilly</a> and from <a href="http://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/149190142X">Amazon</a>.
+<h1>Data Science from Scratch, second edition</h1>
 
-<h2>Praise</h2>
+The second edition is now available, get it <a href = "https://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/1492041130">from Amazon</a> or on Safari!
+
+(For now the <a href="http://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/149190142X">first edition is still available too</a>.)
+
+<h2>Praise for the first edition</h2>
 
 <div>"This is among the handful of very best technical books I have ever read." - <a href="http://www.amazon.com/review/RNVKX4S27WJ2B/">Amazon review</a></div>
 

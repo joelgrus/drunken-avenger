@@ -13,7 +13,7 @@ service.
 
 Here's a rough stab at a wireframe:
 
-![wireframe]({filename}/images/wireframe.png)
+![wireframe]({static}/images/wireframe.png)
 
 On the left will be the quiz questions. On the right will be the score, a
 "new game" button, and self-aggrandizing stuff like links to my Twitter.
@@ -458,7 +458,7 @@ The front-end should be totally robust, but the back-end question service is run
 on an EC2 nano instance, so try to be gentle. If it dies for some reason, this
 is what it looks like (or run it yourself locally!):
 
-![science quiz]({filename}/images/science_quiz.png)
+![science quiz]({static}/images/science_quiz.png)
 
 ## The Verdict
 

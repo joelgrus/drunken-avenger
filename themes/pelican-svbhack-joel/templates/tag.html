@@ -3,10 +3,10 @@
 
 {% block head %}
 {% if TAG_FEED_ATOM %}
-<link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} {{ tag }} Tag Atom" />
+<link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(slug=tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} {{ tag }} Tag Atom" />
 {% endif %}
 {% if TAG_FEED_RSS %}
-<link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} {{ tag }} Tag RSS" />
+<link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(slug=tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} {{ tag }} Tag RSS" />
 {% endif %}
 {% endblock %}
 
@@ -14,9 +14,9 @@
 <a href="{{SITEURL}}/tags.html">Tags</a>
 &gt; Tag: {{ tag }}
 {% if TAG_FEED_ATOM %}
-&brvbar; <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}">Atom</a>
+&brvbar; <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(slug=tag.slug) }}">Atom</a>
 {% endif %}
 {% if TAG_FEED_RSS %}
-&brvbar; <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}">RSS</a>
+&brvbar; <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(slug=tag.slug) }}">RSS</a>
 {% endif %}
 {% endblock %}

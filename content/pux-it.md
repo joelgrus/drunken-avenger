@@ -38,7 +38,7 @@ Here we'll worry about building a front-end to play with these cards. My first
 idea was to show two cards at a time, and have the player have to click on the
 picture in common.
 
-![spotit]({filename}images/spot_it.jpg)
+![spotit]({static}images/spot_it.jpg)
 
 But that's too easy to cheat (from our side), since it's trivial to generate
 *two* cards with one image in common, over and over again. Eventually I decided
@@ -46,7 +46,7 @@ that what's interesting about the setup is that it *works*, and that a cooler
 visualization would be to show *all* the cards, allow the player to select any
 two, and have the app show the picture in common.
 
-![puxit]({filename}images/puxit.gif)
+![puxit]({static}images/puxit.gif)
 
 This means a good first start would be to get some images. For the standard game
 (8 images/card) we need 57 different images. After poking around

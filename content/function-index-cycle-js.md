@@ -15,7 +15,7 @@ My idea was pretty simple: a text input that you type in, and a table of
 type. So if you type "add" you get all the functions that contain "add" somewhere
 in their name (e.g. `vector_add`).
 
-![index-of-functions]({filename}images/index-of-functions.png)
+![index-of-functions]({static}images/index-of-functions.png)
 
 Simple enough, but also a good opportunity to
 use/learn some newfangled client-side-virtual-dom-javascript-magic framework.

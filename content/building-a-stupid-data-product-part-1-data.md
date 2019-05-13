@@ -46,7 +46,7 @@ as `dict`s where the keys are words, and the values are lists of next words:
 
 To start with, we can just download the CSV:
 
-![questions]({filename}/images/questions_csv.png)
+![questions]({static}/images/questions_csv.png)
 
 We only care about the 'question' column, so let's just read that in.
 (As always, use `csv.reader`, don't try to parse it by hand!)
@@ -202,7 +202,7 @@ def markov_gen(transitions):
     word = next_word(transitions, START)
     while word != STOP:
       yield word
-      word = next_word(transitions, word)  
+      word = next_word(transitions, word)
 ```
 
 For example, to generate a fake question and four fake answers:

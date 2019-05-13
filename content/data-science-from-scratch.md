@@ -9,9 +9,9 @@ My experience learning and teaching data science was that there were two primary
 1. The Math Path: "So you want to be a data scientist? Sure, the first thing you need to know is <i>matrix decompositions</i>. How well do you remember your measure theory?"
 2. The Tools Path: "So you want to be a data scientist? Great, here's the most important libraries to know.  How well do you know R?"
 
-Although I am myself a "math person", the first approach never resonated with me.  The fun of data science for me has always been <i>working with data</i>.  At the same time, I've never been thrilled with the second approach -- it's a good way to start doing data science without ever really understanding what you're doing.  
+Although I am myself a "math person", the first approach never resonated with me.  The fun of data science for me has always been <i>working with data</i>.  At the same time, I've never been thrilled with the second approach -- it's a good way to start doing data science without ever really understanding what you're doing.
 
-My ideal would be a "<a href="http://en.wikipedia.org/wiki/Third_Way">third way</a>" between these approaches: 
+My ideal would be a "<a href="http://en.wikipedia.org/wiki/Third_Way">third way</a>" between these approaches:
 
 1. understanding the behavior of the most common tools by working through a solid-but-less-than-textbook-rigorous understanding of the math behind them, and
 2. implementing simplified versions of them <i>from scratch</i> to understand exactly what it is they're doing.
@@ -22,4 +22,4 @@ Many technical books (I won't name names) explain things in their text and then 
 
 If you are interested in the topic, I encourage you to check it out, write a review, and let me know what you think!  (You can see the full table of contents on the <a href="http://shop.oreilly.com/product/0636920033400.do">O'Reilly page</a>.)
 
-<a href="http://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/149190142X">![book cover]({filename}images/dsfs.jpg)</a>
+<a href="http://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/149190142X">![book cover]({static}images/dsfs.jpg)</a>

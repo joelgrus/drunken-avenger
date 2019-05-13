@@ -3,11 +3,11 @@ Date: 2015-06-12 12:00
 Category: Mathematics, Code, Spot it, Madeline, Frozen
 
 Last weekend we went to a party where one of the other attendees brought
-<a href = "http://www.amazon.com/Spot-it-Disney-Frozen-Alphabet/dp/B00LK0N1ZK">Spot It! Frozen</a> 
+<a href = "http://www.amazon.com/Spot-it-Disney-Frozen-Alphabet/dp/B00LK0N1ZK">Spot It! Frozen</a>
 for her kids. It's a simple game with circular cards, each of which has 8 pictures in it,
 most of them <i>Frozen</i>-themed.
 
-![frozen]({filename}images/spot_it_frozen.jpg)
+![frozen]({static}images/spot_it_frozen.jpg)
 
 The setup is that any two cards in the deck have <i>exactly</i> one picture in common.
 There are various sets of rules, but they all boil down to some variation of
@@ -19,16 +19,16 @@ never seen the movie. [That's right, I am Dad of the Year, hold your applause un
 
 So I bought her her own set (<a href="http://www.amazon.com/Blue-Orange-00411-Spot-It/dp/B0039S7NO6/">original edition</a>)
 and we started playing it at home.  The more I played it, the more I puzzled over its mathematics.
-How would one go about designing such a deck?  
+How would one go about designing such a deck?
 
-![spotit]({filename}images/spot_it.jpg)
+![spotit]({static}images/spot_it.jpg)
 
 I was unable to figure it out off the top of my head, so I Googled it.
 Sure enough, I was not the first one to ask this question, although most of the
 answers I found were not terrifically understandable.  I finally achieved enlightenment
 through <a href="http://math.stackexchange.com/questions/36798/what-is-the-math-behind-the-game-spot-it/36806#36806">this StackExchange answer</a>
 although it wasn't as clear as I liked.  Also, it didn't provide the code to generate the decks,
-which I decided was a worthwhile exercise.  (As always, 
+which I decided was a worthwhile exercise.  (As always,
 <a href="https://github.com/joelgrus/spot-it">the code is on GitHub</a>.)
 
 The mathematics involves <a href="http://en.wikipedia.org/wiki/Projective_plane#Finite_projective_planes">finite projective planes</a>,
@@ -55,19 +55,19 @@ add a new "line at infinity" that goes through all the infinities.
 
 Although you are probably not used to thinking about finite "planes", we can do something similar for them.
 
-Choose some prime number n, 
+Choose some prime number n,
 and consider the n x n grid of points:
 
 ```python
 def ordinary_points(n):
-    return [(x, y) 
-            for x in range(n) 
+    return [(x, y)
+            for x in range(n)
             for y in range(n)]
 ```
 
 (We'll explain why we chose n to be prime in a bit.)
 
-In this finite plane we do arithmetic <a href="http://en.wikipedia.org/wiki/Modular_arithmetic">mod n</a>, 
+In this finite plane we do arithmetic <a href="http://en.wikipedia.org/wiki/Modular_arithmetic">mod n</a>,
 so that (for example) the set of points
 with y = 0 is in fact a horizontal line that "wraps around" from (n - 1, 0) to (0, 0).
 
@@ -83,7 +83,7 @@ It turns out that there are n + 1 ordinary lines through (0, 0):
 and every point that's not (0, 0) lies on exactly one of these lines.
 
 <blockquote>This is one place where the prime-ness of n matters.  For instance,
-if we'd chosen n = 4, then the line with slope 0 
+if we'd chosen n = 4, then the line with slope 0
 
 [(0, 0), (1, 0), (2, 0), (3, 0)]
 
@@ -91,14 +91,14 @@ and the line with slope 2
 
 [(0, 0), (1, 2), (2, 0), (3, 2)]
 
-both pass through (0, 0) and (2, 0), but clearly they're not the same line.  
+both pass through (0, 0) and (2, 0), but clearly they're not the same line.
 n being prime ensures the "two points lie on exactly one line" condition.</blockquote>
 
-Each ordinary (non-vertical) line is defined by its slope and its intercept.  For example, there is a line through (0, 0) with slope 1, 
+Each ordinary (non-vertical) line is defined by its slope and its intercept.  For example, there is a line through (0, 0) with slope 1,
 which passes through (0, 0), (1, 1), (2, 2), and (3, 3).  And there is a line through (0, 1) with slope 1,
 it passes through (0, 1), (1, 2), (2, 3), and (3, 0).  [Remember that we're doing arithmetic mod n.] Each vertical line is defined just by its x-coordinate.
 
-Again we have the problem that parallel lines don't intersect, and again we'll solve it by 
+Again we have the problem that parallel lines don't intersect, and again we'll solve it by
 adding "points at infinity", one for each slope.  We'll represent the "infinity" with slope 1
 just as the number 1, and we'll represent the "vertical infinity" as the unicode `u"∞"`.
 
@@ -118,7 +118,7 @@ def ordinary_line(m, b, n):
     in the finite projective plan of degree n
     includes 'infinity m'"""
     return [(x, (m * x + b) % n) for x in range(n)] + [m]
-    
+
 def vertical_line(x, n):
     """returns the vertical line with the specified x-coordinate
     in the finite projective plane of degree n
@@ -137,17 +137,17 @@ def line_at_infinity(n):
 <h2>Are You Sure About The "Two Lines One Point"?</h2>
 
 I am.  But let's prove it.  Imagine we have two different lines.
-We want to prove that they intersect in <i>exactly</i> one point.  
+We want to prove that they intersect in <i>exactly</i> one point.
 We have several types of lines, so we'll need to consider every possible combination of cases:
 
-<b>two ordinary lines with the same slope:</b> 
+<b>two ordinary lines with the same slope:</b>
 
-Say we have the lines (m1, b1) and (m1, b2).  They intersect at an ordinary point if 
-there is some x so that m1 * x + b1 = m1 * x + b2; that is, if b1 = b2.  
+Say we have the lines (m1, b1) and (m1, b2).  They intersect at an ordinary point if
+there is some x so that m1 * x + b1 = m1 * x + b2; that is, if b1 = b2.
 But since they're different lines, necessarily b1 doesn't equal b2.
 So these lines just intersect at "infinity m1".
 
-<b>two ordinary lines with different slope:</b> 
+<b>two ordinary lines with different slope:</b>
 
 Say we have the lines (m1, b1) and (m2, b2). They clearly don't intersect at infinity,
 since one passes through "infinity m1" and the other through "infinity m2".
@@ -160,24 +160,24 @@ or if
 (m1 - m2) * x = b2 - b1 (mod n)
 
 Because <a href="http://en.wikipedia.org/wiki/Finite_field#Definitions.2C_first_examples.2C_and_basic_properties">n is prime</a>
-(this is another place where the prime-ness is important), 
+(this is another place where the prime-ness is important),
 it turns out there is a unique x for which this is true, so that's where they intersect:
 
-(x, (m1 * x + b1) mod n) = (x, (m2 * x + b2) mod n) 
+(x, (m1 * x + b1) mod n) = (x, (m2 * x + b2) mod n)
 
-<b>ordinary line (m1, b1), vertical line through x</b>.  
+<b>ordinary line (m1, b1), vertical line through x</b>.
 
 It's easy to see they intersect exactly at (x, m1 * x + b1)
 
-<b>ordinary line (m1, b1), line at infinity</b>. 
+<b>ordinary line (m1, b1), line at infinity</b>.
 
 Again, it's easy to see that they intersect exactly at "infinity m1".
 
-<b>vertical line through x1, vertical line through x2</b>. 
+<b>vertical line through x1, vertical line through x2</b>.
 
 Intersect exactly at "infinity infinity"
 
-<b>vertical line through x, line at infinity</b>. 
+<b>vertical line through x, line at infinity</b>.
 
 Intersect exactly at "infinity infinity"
 
@@ -202,7 +202,7 @@ and any two cards have in common exactly one picture.  That's exactly the game.
 (Actually, for reasons unknown to the Internet, the version of the game you buy only has 55 cards.
 But our version has 57 cards.)
 
-How do we create a deck?  
+How do we create a deck?
 First, let's create a couple of functions to collect all of the points and lines:
 
 ```python
@@ -233,7 +233,7 @@ def make_deck(n, pics):
     points = all_points(n)
 
     # create a mapping from point to pic
-    mapping = { point : pic 
+    mapping = { point : pic
                 for point, pic in zip(points, pics) }
 
     # and return the remapped cards
@@ -248,7 +248,7 @@ def play_game(deck):
     deck = deck[:]
     random.shuffle(deck)
 
-    # keep playing until fewer than 2 cards are left    
+    # keep playing until fewer than 2 cards are left
     while len(deck) >= 2:
         card1 = deck.pop()
         card2 = deck.pop()
@@ -256,11 +256,11 @@ def play_game(deck):
         random.shuffle(card2)  # they might face different directions
 
         # find the matching element
-        match, = [pic for pic in card1 if pic in card2]  
+        match, = [pic for pic in card1 if pic in card2]
 
         print card1
         print card2
-        
+
         guess = raw_input("Match? ")
         if guess == match:
             print "correct!"
@@ -282,5 +282,5 @@ Match? Narwhal
 incorrect!
 ```
 
-and so on.  And now you know how the game works.  Maybe next time we'll 
+and so on.  And now you know how the game works.  Maybe next time we'll
 <a href="https://github.com/joelgrus/spot-it/blob/master/haskell/SpotIt.hs">do it in Haskell</a>!
