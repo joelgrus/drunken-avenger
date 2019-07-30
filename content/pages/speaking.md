@@ -9,8 +9,9 @@ touch!
 
 Here are some talks I have given:
 
-Technical
----------
+### Reproducibility as a Vehicle for Engineering Best Practices
+
+Invited talk at the ICLR 2019 Workshop on "Reproducibility in ML". [<a href = "https://docs.google.com/presentation/d/1yHLPvPhUs2KGI5ZWo0sU-PKU3GimAk3iTsI38Z-B5Gw/edit?usp=sharing">slides</a>]
 
 ### Modern NLP for Pre-Modern Practioners
 
@@ -97,22 +98,3 @@ social networks? Given at the Ignite at Strata 2013.
 I finally found the <a href = "https://www.youtube.com/watch?v=SoS6ODOqZm0">video</a> of it,
 the reason I never could is because the description says the speaker
 is "Mick Thompson", but it's definitely me.
-
-Non-Technical
--------------
-
-### Hitler Loved Patents
-
-The case against intellectual property, given at BIL 2012 (low-quality
-cellphone [video](http://vimeo.com/38745387))
-
-### How to be Funny
-
-Given at Ignite Seattle, marred by technical difficulties.
-([video](http://www.youtube.com/watch?v=rLVat9hq964)) I gave a better
-(longer) version at BIL 2011, but there's no video for it.
-
-### Your Religion is False
-
-Just what it sounds like, delivered at the BIL conference in 2009.
-([video](http://vimeo.com/7567278))
