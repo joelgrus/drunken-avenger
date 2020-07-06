@@ -4,6 +4,12 @@ Author: joelgrus
 Slug: books
 Order: 20
 
+<h1>Ten Essays on Fizz Buzz</h1>
+
+> "This book is so good. I wish I'd written it." -- Tim Hopper ([@tdhopper](https://twitter.com/tdhopper))
+
+Available now at [fizzbuzzbook.com](https://fizzbuzzbook.com).
+
 <h1>Data Science from Scratch, second edition</h1>
 
 The second edition is now available, get it <a href = "https://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/1492041130">from Amazon</a> or
