@@ -9,6 +9,19 @@ touch!
 
 Here are some talks I have given:
 
+### Data Science: A Vision of Things to Come
+
+In which I try to predict the future of data science.
+This was a keynote at the 2020 Southern Data Science Conference. 
+[<a href = "https://docs.google.com/presentation/d/11-4j2YpiY7iMwCxgaHUF0s6uFTJF-TKIBPWzkRf5BIY/edit?usp=sharing">slides</a>]
+
+### Managing Junior Data Scientists in the Time of Coronavirus
+
+I am trying to branch out and give talks that are less purely technical. 
+(They're easier to write.) This one was at IBM Learn AI 2020.
+[<a href = "https://docs.google.com/presentation/d/1PoKysoyHAEOqPJlfich-I5vJ-60UtlQu2Repu92RIZc/edit?usp=sharing">slides</a>]
+
+
 ### Reproducibility as a Vehicle for Engineering Best Practices
 
 Invited talk at the ICLR 2019 Workshop on "Reproducibility in ML". [<a href = "https://docs.google.com/presentation/d/1yHLPvPhUs2KGI5ZWo0sU-PKU3GimAk3iTsI38Z-B5Gw/edit?usp=sharing">slides</a>]
