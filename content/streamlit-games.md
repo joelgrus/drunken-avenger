@@ -1,4 +1,4 @@
-Title: Streamlit Games
+Title: Creating Games in Streamlit
 Date: 2020-10-02 12:00
 Category: Python, Streamlit
 
