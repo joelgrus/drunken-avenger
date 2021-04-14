@@ -3,7 +3,7 @@ body {
   padding: 0;
   background-color: #ffffff;
   color: #4d4d4d;
-  font-family: 'PT Sans', sans-serif;
+  font-family: sans-serif;
   font-size: 18px;
 }
 a {
@@ -35,14 +35,14 @@ aside div#user_meta p {
   font-size: 14px;
 }
 aside div#user_meta ul {
-  margin: 40px 0 0 0;
+  margin: 10px 0 0 0;
   padding-left: 0;
   font-size: 16px;
   list-style-type: none;
 }
 aside div#user_meta ul li {
   display: inline;
-  line-height: 3em;
+  line-height: 2em;
 }
 aside div#user_meta ul li a {
   padding: 5px 15px 5px 15px;
@@ -87,7 +87,7 @@ main article div.article_text code {
   padding: 0;
   color: #000000;
   font-size: 14px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: monospace;
   background: #eeeeee;
 }
 main article div.article_text pre {
@@ -96,7 +96,7 @@ main article div.article_text pre {
   color: #000000;
   border-left: 3px solid #0e94ec;
   font-size: 14px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: monospace;
   background: #eeeeee;
   line-height: 1.25em;
   overflow-x: auto;
@@ -217,7 +217,7 @@ i.fa-linkedin:hover {
 
 
 .name {
-  font-family: 'Bangers', 'PT Sans', sans-serif;
+  font-family: 'Bangers', serif;
   font-weight: normal;
   font-size: 1.5em;
 }
