@@ -56,11 +56,7 @@ get the PDF from <a href = "https://www.ebooks.com/en-us/209663126/data-science-
 
 <h1>Older Books</h1>
 
-Joel's previous book *Thinking Spreadsheet*, is available at [Amazon.com](http://www.amazon.com/gp/product/0982481810?ie=UTF8&tag=brightwalton-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0982481810).
-
-Joel's first book, *Your Religion Is False*, is also
-available at
-[Amazon.com](http://www.amazon.com/gp/product/0982481802?ie=UTF8&tag=brightwalton-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0982481802).
+Joel's previous book *Thinking Spreadsheet*, is available at [Amazon.com](http://www.amazon.com/gp/product/0982481810?ie=UTF8&tag=brightwalton-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0982481810) or can be [read online](http://joelgrus.github.io/thinking-spreadsheet/).
 
 He has several other books in progress, and very soon he'll decide which
 one to finish first.
