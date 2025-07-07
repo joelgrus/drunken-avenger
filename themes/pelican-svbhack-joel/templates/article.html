@@ -1,42 +1,50 @@
-{% extends "base.html" %}
+{% extends "professional-base.html" %}
 {% block head %}
 <meta name="keywords" content="{{ article.tags|join(', ')  }}">
 {% endblock %}
 
-{% block title %}&ndash; {{ article.title }}{% endblock %}
+{% block title %} - {{ article.title }}{% endblock %}
 
 {% block content %}
-<article>
-  <div class="article_title">
-    <h2><a href="/{{ article.url }}">{{ article.title }}</a></h2>
+<div class="article-header">
+  <div class="container">
+    <h1>{{ article.title }}</h1>
+    <div class="article-meta">
+      <span class="article-date">{{ article.locale_date }}</span>
+      {% if article.category %}
+      <span class="article-category">{{ article.category }}</span>
+      {% endif %}
+      {% if article.tags %}
+      <div class="article-tags">
+        {% for tag in article.tags %}
+        <a href="/{{ tag.url }}" class="tag">{{ tag }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
   </div>
-  <div class="article_text">
+</div>
+
+<div class="article-content">
+  <div class="container">
     {{ article.content }}
   </div>
-  <div class="article_meta">
-    <p>Posted on: {{ article.locale_date }}</p>
-    <p>Category: <a href="/{{ article.category.url }}">{{ article.category }}</a>
-      {% if article.tags %} &ndash; Tags:
-      {% for tag in article.tags %}
-      <a href="/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
-      {% endfor %}
-      {% endif %}
-    </p>
-  </div>
+</div>
 
-  {% if DISQUS_SITENAME %}
-  <div id="article_comments">
+{% if DISQUS_SITENAME %}
+<div class="comments-section">
+  <div class="container">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         var disqus_identifier = "{{ article.url }}";
         (function() {
              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-             dsq.src = 'http://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
+             dsq.src = 'https://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
          })();
     </script>
   </div>
-  {% endif %}
+</div>
+{% endif %}
 
-</article>
 {% endblock %}

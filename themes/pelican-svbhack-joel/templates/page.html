@@ -1,19 +1,18 @@
-{% extends "base.html" %}
-{% block title %}&ndash; {{ page.title }}{% endblock %}
-
-{% block header %}
-  <div class="article_title">
-    <h1><a href="/{{ page.url }}">{{ page.title }}</a></h1>
-  </div>
-{% endblock %}
+{% extends "professional-base.html" %}
+{% block title %} - {{ page.title }}{% endblock %}
 
 {% block content %}
-<article>
-  <div class="article_text">
-    {{ page.content }}
+<div class="page-header">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
   </div>
-  <div class="article_meta">
-    <!-- <p>Updated on: {{ page.locale_date }}</p> -->
+</div>
+
+<div class="page-content section">
+  <div class="container-narrow">
+    <div class="page-text">
+      {{ page.content }}
+    </div>
   </div>
-</article>
+</div>
 {% endblock %}

@@ -14,7 +14,7 @@ print("using site url", SITEURL)
 
 THEME = 'themes/pelican-svbhack-joel'
 TAGLINE = SITESUBTITLE
-USER_LOGO_URL = '/images/joel.png'
+USER_LOGO_URL = '/images/joel_headshot.jpeg'
 
 STATIC_PATHS = ['images', 'wp-content', 'experiments', 'static']
 READERS = {"html": None}
@@ -63,6 +63,19 @@ SOCIAL = (('fa fa-twitter', 'https://twitter.com/joelgrus'),
 TWITTER_USERNAME = 'joelgrus'
 
 DEFAULT_PAGINATION = False
+
+# Custom homepage template
+INDEX_SAVE_AS = 'blog/index.html'
+DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives']
+PAGINATED_TEMPLATES = {
+    'index': None,
+    'tag': None,
+    'category': None,
+    'author': None,
+}
+
+# Custom page for homepage
+DISPLAY_PAGES_ON_MENU = True
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

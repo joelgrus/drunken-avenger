@@ -1,0 +1,10 @@
+[project]
+name = "drunken-avenger"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "markdown>=3.8.2",
+    "pelican>=4.11.0",
+]

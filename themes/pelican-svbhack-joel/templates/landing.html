@@ -1,0 +1,51 @@
+{% extends "professional-base.html" %}
+{% block content %}
+
+<div class="hero-section">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="hero-title">Joel Grus</h1>
+      <p class="hero-subtitle">{{ article.subtitle }}</p>
+    </div>
+    <div class="hero-image-container">
+      <div class="hero-image-wrapper">
+        <img src="{{ USER_LOGO_URL }}" alt="Joel Grus" class="profile-photo">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="homepage-content">
+  <div class="container-narrow">
+    <div class="page-text homepage-text">
+      {{ article.content }}
+      
+      <div class="posts-list">
+        {% for article in articles[:5] %}
+        <div class="post-item">
+          <a href="/{{ article.url }}" class="post-link">{{ article.title }}</a>
+          <span class="post-date">{{ article.date.strftime("%B %d, %Y") }}</span>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="view-all">
+        <a href="/blog/" class="btn btn-secondary">View All Posts →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contact-section section">
+  <div class="container">
+    <div class="contact-links">
+      <a href="mailto:joelgrus@gmail.com" class="btn btn-primary">Get in Touch</a>
+      <div class="social-links">
+        {% for class, link in SOCIAL %}
+        <a href="{{ link }}" target="_blank" class="social-link"><i class="{{class}}"></i></a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

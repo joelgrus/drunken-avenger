@@ -2,6 +2,7 @@ Title: Speaking
 Date: 2013-10-24 07:00
 Author: joelgrus
 Slug: speaking
+Template: speaking
 
 I like to give talks on a wide variety of subjects. If you'd like me to
 give a talk at your event, meetup, roast, or funeral, please get in
