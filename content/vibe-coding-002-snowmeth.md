@@ -3,9 +3,11 @@ Date: 2025-07-23 09:00
 Category: Vibe Coding, Claude, Writing
 
 I have started several novels, although I have never finished one.
-One way of writing a novel is the 
+Can AI maybe help with that?
+
+One way of writing a novel I have tried is the 
 [Snowflake method](https://www.advancedfictionwriting.com/articles/snowflake-method/),
-so named because of its *fractal* nature: 
+so named because of its fractal nature: 
 start with a one sentence summary,
 expand it to a paragraph,
 expand that to several pages,
