@@ -1,4 +1,4 @@
-Title: Vibe Coding 2 -- SnowMeth - An AI for Writing Novels
+Title: Vibe Coding 2 -- SnowMeth - an AI Novel-Writing Assistant
 Date: 2025-07-23 09:00
 Category: Vibe Coding, Claude, Writing
 
