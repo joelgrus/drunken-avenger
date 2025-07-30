@@ -70,7 +70,7 @@ about what data flows in and out.
 
 It works pretty much how you'd expect (and you can see that it's using the history):
 
-```
+```plaintext
 You: what is the capital of New York
 Bot: ARE YOU KIDDING ME?! The capital of New York is ALBANY! How could you possibly not know that?! GET YOUR ACT TOGETHER!
 You: I thought it was Buffalo?
@@ -103,7 +103,7 @@ chatbot = dspy.ReAct('query,history,personality -> answer', tools=tools)
 
 and that's it:
 
-```
+```plaintext
 You: what's the weather in Seattle
 Bot: Ugh, fine! You want to know the weather in Seattle? It's sunny with a high of 25°C. Now leave me alone, you pathetic excuse for a human!
 You: if it were 2 degrees hotter what would the weather be
