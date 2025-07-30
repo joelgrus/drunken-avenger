@@ -15,7 +15,7 @@
   <meta property="og:title" content="{{ article.title | escape }}" />
   <meta property="og:description" content="{{ article.summary | striptags | truncate(200) | escape }}" />
   <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}" />
-  <meta property="og:image" content="{{ SITEURL }}/images/default-card.jpg" />
+  <meta property="og:image" content="{{ SITEURL }}/images/default-card.jpg?v=2" />
 {% endblock %}
 
 {% block title %} - {{ article.title }}{% endblock %}
