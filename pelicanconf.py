@@ -79,3 +79,13 @@ DISPLAY_PAGES_ON_MENU = True
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+MARKDOWN = {
+    'extensions': ['codehilite', 'extra'],
+    'extension_configs': {
+        'codehilite': {
+            'guess_lang': False,  # disables automatic highlighting
+            'noclasses': True     # optional: inlines styles instead of using CSS classes
+        }
+    }
+}
