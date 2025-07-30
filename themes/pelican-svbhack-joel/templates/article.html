@@ -1,6 +1,22 @@
 {% extends "professional-base.html" %}
 {% block head %}
-<meta name="keywords" content="{{ article.tags|join(', ')  }}">
+  {{ super() }}
+  <meta name="keywords" content="{{ article.tags|join(', ') }}">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@joelgrus">
+  <meta name="twitter:title" content="{{ article.title | escape }}">
+  <meta name="twitter:description" content="{{ article.summary | striptags | truncate(200) | escape }}">
+  <meta name="twitter:image" content="{{ SITEURL }}/images/default-card.jpg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="{{ SITENAME }}" />
+  <meta property="og:title" content="{{ article.title | escape }}" />
+  <meta property="og:description" content="{{ article.summary | striptags | truncate(200) | escape }}" />
+  <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}" />
+  <meta property="og:image" content="{{ SITEURL }}/images/default-card.jpg" />
 {% endblock %}
 
 {% block title %} - {{ article.title }}{% endblock %}
