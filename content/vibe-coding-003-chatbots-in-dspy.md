@@ -95,7 +95,7 @@ def do_math(expression: str) -> str:
 tools = [dspy.Tool(get_weather), dspy.Tool(do_math)]
 ```
 
-And then we just use `[dspy.ReAct](https://dspy.ai/api/modules/ReAct/)` instead of `dspy.Predict`:
+And then we just use [dspy.ReAct](https://dspy.ai/api/modules/ReAct/) instead of `dspy.Predict`:
 
 ```python
 chatbot = dspy.ReAct('query,history,personality -> answer', tools=tools)
