@@ -54,6 +54,7 @@ I had in mind a number of improvements, including
 
 * blank tiles (which presented UX challenges in placing them,
 assigning them a letter value, and tracking their letter value)
+* multi-player mode (e.g. you are in a game with n other people, you share a board, each person has their own tiles, everyone draws at the same time, first to "go out" wins), this would have made the project probably an order of magnitude more complex
 * daily puzzles (i.e. tile orders) with scoreboards, etc
 * better sharing of completed puzzles (it's implemented but has some UX problems)
 
