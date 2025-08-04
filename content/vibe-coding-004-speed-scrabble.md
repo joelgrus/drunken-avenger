@@ -68,7 +68,7 @@ I don't really understand and that I can't really maintain myself.
 
 Very dangerous!
 
-Check out the code on GitHub: https://github.com/joelgrus/speed-scrabble and feel free to let me know which of the fundamental
+Check out the code on GitHub: [joelgrus/speed-scrabble](https://github.com/joelgrus/speed-scrabble) and feel free to let me know which of the fundamental
 rules of React were broken here.
 
 Play it yourself: [speedscrabble.netlify.app](https://speedscrabble.netlify.app/)
