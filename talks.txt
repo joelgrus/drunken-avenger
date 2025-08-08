@@ -1,0 +1,23 @@
+* [**Doing Data Science in the time of ChatGPT**](https://docs.google.com/presentation/d/12SFKg1ZZe16-6Xigv5x7DRd1GsqanwcOfwC2k5PnWUk/edit?usp=sharing) San Antonio Data Science meetup, November 2023  
+* [**LLM Simplicity**](https://docs.google.com/presentation/d/1t9U-dWkk2-Wncqo_nkv7w9pZmcQVbdhCjX1f5M3rsxQ/edit?usp=sharing) keynote at Southern Data Science 2023  
+* [**What's the simplest thing that might possibly work, and why didn't you try that first?**](https://docs.google.com/presentation/d/11URorkUbl5fCeCK7bBuLoYI3ATLkjEjZcR-7abGwUj0/edit?usp=sharing) Normconf 2022  
+* [**Simplicity**](https://docs.google.com/presentation/d/1nRXi_ES9g0cudNoYHdWIVo7I8KCVv9wVMAMJcOf-ngo/edit?usp=sharing) keynote at Southern Data Science 2022  
+* [**Ten Ways to Fizz Buzz**](https://docs.google.com/presentation/d/1iQdCFShxnW_0GHwtovBhN-PYqeeO86kxl3QDqxekvc0/edit?usp=sharing) PyData Global 2020  
+* [**Data Science: A Vision of Things to Come**](https://docs.google.com/presentation/d/11-4j2YpiY7iMwCxgaHUF0s6uFTJF-TKIBPWzkRf5BIY/edit?usp=sharing) keynote at Southern Data Science 2020  
+* [**Managing Junior Data Scientists in the Time of Coronavirus**](https://docs.google.com/presentation/d/1PoKysoyHAEOqPJlfich-I5vJ-60UtlQu2Repu92RIZc/edit?usp=sharing) IBM Learn AI 2020  
+* [**Muppets and Transformers: The New Stars of NLP**](https://docs.google.com/presentation/d/1WRv-dfOjMyzGcx8H7rOZJia0ovbsV0klyBVga-3KO6k/edit?usp=sharing) RE•WORK AI Summit 2020  
+* **Statistics Isn't That Funny, But It Has Its Moments**, banquet keynote at SDSS 2019  
+* [**Reproducibility: A Trojan Horse for Software Engineering Best Practices**](https://docs.google.com/presentation/d/1yHLPvPhUs2KGI5ZWo0sU-PKU3GimAk3iTsI38Z-B5Gw/edit?usp=sharing), ICLR 2019  
+* [**Modern NLP for Pre-Modern Practitioners**](https://docs.google.com/presentation/d/1iX0fODe0YzPg4Ak-pNqO1KiyF3INgv-Zne27XFSlu1s/edit?usp=sharing)**,** keynote at QCon.ai 2019  
+* [**If Not Notebooks, Then What?**](https://docs.google.com/presentation/d/1ivK8AKgz8Hx-ZYzPC9gJyQK6tzuhR3UuhCEajFGJDlA/edit) "Reproducible AI" workshop at AAAI 2019,  
+* [**Writing Code for NLP Research**](https://docs.google.com/presentation/d/17NoJY2SnC2UMbVegaRCWA7Oca7UCZ3vHnMqBV4SUayc/edit) (with Matt Gardner \+ Mark Neumann), tutorial at EMNLP 2018  
+* [**How Becoming Not a Data Scientist Made Me a Better Data Scientist**](https://docs.google.com/presentation/d/1jk-qrVKCb0-P9P4BVzH75gcVhp5Dy5n1CP_gKnHMNY0/edit?usp=sharing), Southern Data Science 2018   
+* [**AllenNLP and Best Practices for NLP Research**](https://docs.google.com/presentation/d/1vRtNf9F6TypiG_7tdOLciAxzp9bF-EIDvWXEwJWlH28/edit?usp=sharing), SAP/Concur "Lunch-n-Learn" (and others) 2018  
+* [**I Don't Like Notebooks**](https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/edit?usp=sharing), JupyterCon 2018  
+* [**Livecoding Madness: Let's Build a Deep Learning Library**](https://www.youtube.com/watch?v=o64FV-ez6Gw)**,** ODSC West 2017 (also, OSCON 2018\)  
+* [**Using AI to Answer Science Questions**](https://docs.google.com/presentation/d/1hLhvkPmRvPGv_gQUu4qDFxamUHqMCdz61shSRUdNkgw/edit?usp=sharing)**,** ODSC East 2017 (also, Southern Data Science 2017\)  
+* [**Fizz Buzz in Tensorflow**](https://docs.google.com/presentation/d/16aTSekqJdF-WjxymEnfiNvJI-StY0deCYBWiZxhPbyI/edit?usp=sharing), PyData Chicago 2016 (also, ODSC West 2016, WrangleConf 2016\)  
+* [**Fun With Trump Tweets**](https://docs.google.com/presentation/d/1UqbMkki1sY7ivgxcWNhWtTETsuWTIJ6V8OMPQNwAUC0/edit?usp=sharing), Seattle TwitterDev Meetup, October 2016  
+* [**Learning and Teaching Data Science from First Principles**](https://docs.google.com/presentation/d/1E3bUtUpDnexGOdnecwfA0IUGDfHAy4db-1o9N341T9M/edit?usp=sharing), Data Day Texas 2016 (and others)  
+* [**Stupid Itertools Tricks for Data Science**](https://github.com/joelgrus/stupid-itertools-tricks-pydata), PyData Seattle 2015  
+* [**Secrets of Fire Truck Society**](https://www.youtube.com/watch?v=SoS6ODOqZm0), Ignite Lightning Talk at Strata 2013
