@@ -85,7 +85,10 @@ MARKDOWN = {
     'extension_configs': {
         'codehilite': {
             'guess_lang': False,  # disables automatic highlighting
-            'noclasses': True     # optional: inlines styles instead of using CSS classes
+            # Use CSS classes so we can control colors via pygments.css
+            'noclasses': False
+            # Optionally set a style when using inline styles:
+            # 'pygments_style': 'monokai'
         }
     }
 }
