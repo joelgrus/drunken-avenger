@@ -187,7 +187,7 @@ The agent may ask you questions during its reasoning process...
 ✅ Order: [{'size': 'small', 'toppings': ['meatballs'], 'special_instructions': 'meatballs crumbled to resemble rocks'}]
 ```
 
-And the web app behaves similarly:
+And the web app behaves similarly (with more complicated things going on behind the scenes):
 
 ![pizza-agent]({static}images/pizza-agent.png)
 
