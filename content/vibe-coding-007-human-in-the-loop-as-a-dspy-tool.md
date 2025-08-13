@@ -17,7 +17,7 @@ And it wasn't obvious how to do this
 (I'm sure other people must have done this and written about it, but if so I couldn't find it.)
 
 So I had a fairly long conversation with Web Claude
-(don't ask my why I picked him over ChatGPT or Gemini)
+(don't ask me why I picked him over ChatGPT or Gemini)
 about [how one might implement this](https://claude.ai/share/c940432b-b912-4adc-8f18-db93ce45591b)
 and ended up with a markdown file explaining what we were hoping
 to accomplish and how we planned to it.
