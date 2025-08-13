@@ -191,6 +191,14 @@ And the web app behaves similarly:
 
 ![pizza-agent]({static}images/pizza-agent.png)
 
+Despite this being a silly example, this is actually a pretty neat
+demonstration of the DSPy / ReAct workflow. I didn't have to program
+anything about the flow of the conversation (e.g. "next ask for the pizza size").
+
+Instead I gave it a structured output format ("I want a list of pizzas, each of which has the following fields") and a tool to ask clarifying
+questions, and then the ReAct loop and LLM took care of deciding what questions to ask until it got all the information it needed. 
+That's actually really cool!
+
 Anyway, this was pretty satisfying to puzzle out, and hopefully it helps someone else. 
 
 The code is [on GitHub](https://github.com/joelgrus/human-in-the-loop-dspy-tool).
