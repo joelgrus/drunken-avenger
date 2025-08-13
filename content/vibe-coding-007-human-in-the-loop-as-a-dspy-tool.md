@@ -201,4 +201,4 @@ That's actually really cool!
 
 Anyway, this was pretty satisfying to puzzle out, and hopefully it helps someone else. 
 
-The code is [on GitHub](https://github.com/joelgrus/human-in-the-loop-dspy-tool).
+As always, the code is [on GitHub](https://github.com/joelgrus/human-in-the-loop-dspy-tool).
